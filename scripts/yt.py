@@ -61,13 +61,23 @@ def main():
         diag.append(f"page videos {n_ok}")
     except Exception as e:
         diag.append(f"page err {e}")
+    # PROBE temporal: qué ve la app
+    try:
+        r = requests.get("https://cucosdraft.pages.dev/api/yt?probe=" + str(int(time.time())), headers=UA, timeout=30)
+        diag.append({"appyt": r.status_code, "n": r.text.count('"id"'), "head": r.text[:300]})
+        r = requests.get("https://cucosdraft.pages.dev/api/yt", headers=UA, timeout=30)
+        diag.append({"appyt_plain": r.status_code, "n": r.text.count('"id"'), "cache": r.headers.get("cache-control"), "age": r.headers.get("age")})
+        r = requests.get("https://cucosdraft.pages.dev/", headers=UA, timeout=30)
+        diag.append({"index_has_ytForGame": "ytForGame" in r.text, "has_lockup": "hasDate" in r.text})
+    except Exception as e:
+        diag.append(f"probe err {e}")
     have = {v["id"] for v in old}
     add = [v for v in fresh if v["id"] not in have]
     cut = (datetime.now(timezone.utc) - timedelta(days=10)).isoformat()
     items = sorted(add + old, key=lambda v: v["at"], reverse=True)
     items = [v for v in items if v["at"] >= cut][:800]
     print(f"leídos {len(fresh)}, nuevos {len(add)}, total {len(items)}", diag)
-    if add or not os.path.exists(OUT) or not items:
+    if True:
         os.makedirs(os.path.dirname(OUT), exist_ok=True)
         json.dump({"updated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "diag": diag, "items": items}, open(OUT, "w"), ensure_ascii=False, separators=(",", ":"))
 
