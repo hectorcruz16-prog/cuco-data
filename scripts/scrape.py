@@ -251,6 +251,91 @@ def bbref(season_end):
     return url, out
 
 
+# ------------------------------------------------------------------ Basketball-Reference: avanzadas
+def bbref_adv(season_end):
+    url = f"https://www.basketball-reference.com/leagues/NBA_{season_end}_advanced.html"
+    r = get(url)
+    r.encoding = "utf-8"
+    soup = BeautifulSoup(r.text, "lxml")
+    t = soup.find("table", id="advanced") or soup.find("table", id="advanced_stats")
+    if not t:
+        raise RuntimeError("no encontré la tabla advanced")
+    out = {}
+    for tr in t.find("tbody").find_all("tr"):
+        def g(k, tr=tr):
+            c = tr.find(["td", "th"], {"data-stat": k})
+            return c.get_text(strip=True) if c else ""
+        n = g("name_display") or g("player")
+        if not n or n in out:
+            continue
+        row = {"usg": num(g("usg_pct")), "per": num(g("per")), "ts": num(g("ts_pct")), "bpm": num(g("bpm")),
+               "ws48": num(g("ws_per_48")), "mp": num(g("mp"))}
+        out[n] = {k: v for k, v in row.items() if v is not None}
+    return url, out
+
+
+# ------------------------------------------------------------------ NBA.com: últimos 15 juegos
+NBA_H = {"User-Agent": UA["User-Agent"], "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9",
+         "Referer": "https://www.nba.com/", "Origin": "https://www.nba.com", "x-nba-stats-origin": "stats", "x-nba-stats-token": "true"}
+
+
+def nba_dash(season, stype, measure, last_n=15):
+    params = {"College": "", "Conference": "", "Country": "", "DateFrom": "", "DateTo": "", "Division": "", "DraftPick": "",
+              "DraftYear": "", "GameScope": "", "GameSegment": "", "Height": "", "ISTRound": "", "LastNGames": str(last_n), "LeagueID": "00",
+              "Location": "", "MeasureType": measure, "Month": "0", "OpponentTeamID": "0", "Outcome": "", "PORound": "0",
+              "PaceAdjust": "N", "PerMode": "PerGame", "Period": "0", "PlayerExperience": "", "PlayerPosition": "", "PlusMinus": "N",
+              "Rank": "N", "Season": season, "SeasonSegment": "", "SeasonType": stype, "ShotClockRange": "", "StarterBench": "",
+              "TeamID": "0", "TwoWay": "0", "VsConference": "", "VsDivision": "", "Weight": ""}
+    r = requests.get("https://stats.nba.com/stats/leaguedashplayerstats", params=params, headers=NBA_H, timeout=45)
+    r.raise_for_status()
+    rs = r.json()["resultSets"][0]
+    return [dict(zip(rs["headers"], row)) for row in rs["rowSet"]]
+
+
+def nba_last15():
+    season = f"{SEASON_END - 1}-{str(SEASON_END)[2:]}"
+    stype = "Regular Season"
+    base = nba_dash(season, stype, "Base")
+    if len(base) < 50:  # todavía no empieza la temporada regular: pretemporada
+        stype = "Pre Season"
+        base = nba_dash(season, stype, "Base")
+    time.sleep(2)
+    try:
+        adv = {a["PLAYER_ID"]: a for a in nba_dash(season, stype, "Advanced")}
+    except Exception as e:
+        log(f"  avanzadas NBA.com fallaron: {e}")
+        adv = {}
+    out = {}
+    for b in base:
+        a = adv.get(b["PLAYER_ID"], {})
+        row = {"team": b.get("TEAM_ABBREVIATION"), "gp": b.get("GP"), "min": b.get("MIN"), "pts": b.get("PTS"), "reb": b.get("REB"),
+               "ast": b.get("AST"), "stl": b.get("STL"), "blk": b.get("BLK"), "tpm": b.get("FG3M"), "to": b.get("TOV"),
+               "fgp": b.get("FG_PCT"), "ftp": b.get("FT_PCT"), "usg": a.get("USG_PCT")}
+        out[b["PLAYER_NAME"]] = {k: (round(v, 3) if isinstance(v, float) else v) for k, v in row.items() if v is not None}
+    return season + " " + stype, out
+
+
+# ------------------------------------------------------------------ Depth charts
+def probe(url, **kw):
+    try:
+        r = requests.get(url, headers=kw.get("h", UA), timeout=30)
+        DBG.setdefault("probe", []).append({"url": url, "status": r.status_code, "len": len(r.text), "head": r.text[:300]})
+        return r
+    except Exception as e:
+        DBG.setdefault("probe", []).append({"url": url, "error": str(e)[:200]})
+        return None
+
+
+def depth_probe():
+    probe("https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/7/depthcharts")
+    probe("https://site.web.api.espn.com/apis/site/v2/sports/basketball/nba/teams/7/depthcharts")
+    probe(f"https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/{SEASON_END}/teams/7/depthcharts")
+    probe("https://www.rotowire.com/basketball/nba-lineups.php")
+    probe("https://www.fantasypros.com/nba/depth-charts.php")
+    probe("https://hoopshype.com/nba-depth-charts/")
+    probe("https://www.espn.com/nba/team/depth/_/name/den")
+
+
 # ------------------------------------------------------------------ main
 def main():
     prev = {}
@@ -322,6 +407,72 @@ def main():
                 ps = prev.get("sources", {}).get("bb" + key, {})
                 res["sources"]["bb" + key] = {**ps, "fresh": False, "error": str(e)[:160]}
         time.sleep(4)
+
+    # juegos jugados de las últimas 3 temporadas (las viejas no cambian: se leen una vez y se guardan)
+    gph_prev = prev.get("gph") or {}
+    seasons_done = set((prev.get("sources", {}).get("gph", {}) or {}).get("seasons") or [])
+    gph = {n: dict(v) for n, v in gph_prev.items()}
+    got = set(seasons_done)
+    for season in (SEASON_END - 3, SEASON_END - 2):
+        if str(season) in seasons_done:
+            continue
+        try:
+            log(f"[gph] {season}")
+            _, d = bbref(season)
+            for n, v in d.items():
+                if v.get("gp") is not None:
+                    gph.setdefault(n, {})[str(season)] = v["gp"]
+            got.add(str(season))
+            log(f"  ok: {len(d)}")
+        except Exception as e:
+            log(f"  FALLÓ: {e}")
+        time.sleep(4)
+    for n, v in (res.get("last") or {}).items():
+        if v.get("gp") is not None:
+            gph.setdefault(n, {})[str(SEASON_END - 1)] = v["gp"]
+    if gph:
+        res["gph"] = gph
+        res["sources"]["gph"] = {"name": "Basketball-Reference · juegos jugados (3 temporadas)", "url": "https://www.basketball-reference.com/",
+                                 "ok": True, "at": at, "count": len(gph), "fresh": True, "kind": "stats", "seasons": sorted(got)}
+
+    # avanzadas temporada pasada (uso, PER, TS%)
+    try:
+        log(f"[adv] {SEASON_END - 1}")
+        url, d = bbref_adv(SEASON_END - 1)
+        if len(d) < 50:
+            raise RuntimeError(f"pocos jugadores ({len(d)})")
+        res["adv"] = d
+        res["sources"]["adv"] = {"name": f"Basketball-Reference · avanzadas {SEASON_END - 2}-{str(SEASON_END - 1)[2:]}", "url": url,
+                                 "ok": True, "at": at, "count": len(d), "fresh": True, "kind": "stats"}
+        log(f"  ok: {len(d)} · ej: {next(iter(d.items()))}")
+    except Exception as e:
+        log(f"  FALLÓ: {e}")
+        if prev.get("adv"):
+            res["adv"] = prev["adv"]
+            res["sources"]["adv"] = {**prev.get("sources", {}).get("adv", {}), "fresh": False, "error": str(e)[:160]}
+
+    # NBA.com últimos 15 juegos (minutos y uso: quién está subiendo de rol)
+    try:
+        log("[l15] NBA.com")
+        label, d = nba_last15()
+        if len(d) < 50:
+            raise RuntimeError(f"pocos jugadores ({len(d)})")
+        res["l15"] = d
+        res["sources"]["l15"] = {"name": f"NBA.com · últimos 15 juegos ({label})", "url": "https://www.nba.com/stats/players/traditional?LastNGames=15",
+                                 "ok": True, "at": at, "count": len(d), "fresh": True, "kind": "stats", "pre": "Pre" in label}
+        log(f"  ok: {label} {len(d)} · ej: {next(iter(d.items()))}")
+    except Exception as e:
+        log(f"  FALLÓ: {e}")
+        if prev.get("l15"):
+            res["l15"] = prev["l15"]
+            res["sources"]["l15"] = {**prev.get("sources", {}).get("l15", {}), "fresh": False, "error": str(e)[:160]}
+
+    # depth charts
+    try:
+        log("[depth] probando fuentes")
+        depth_probe()
+    except Exception as e:
+        log(f"  FALLÓ: {e}")
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
