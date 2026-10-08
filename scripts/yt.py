@@ -43,6 +43,10 @@ def main():
     try:
         r = requests.get("https://www.youtube.com/@NBA/videos", headers={**UA, "Accept-Language": "en-US,en;q=0.9"}, cookies={"CONSENT": "YES+1"}, timeout=30)
         diag.append(f"page {r.status_code} {len(r.text)}")
+        T = r.text
+        k = T.find('"videoId":"')
+        diag.append({"n_vid": T.count('"videoId":"'), "n_pub": T.count("publishedTimeText"), "n_lockup": T.count("lockupViewModel"),
+                     "n_vr": T.count("videoRenderer"), "n_rich": T.count("richItemRenderer"), "sample": T[k - 200:k + 2500] if k > 0 else ""})
         now = datetime.now(timezone.utc)
         ids = {v["id"] for v in fresh}
         for m in re.finditer(r'"videoId":"([\w-]{11})".{0,1500}?"title":\{"runs":\[\{"text":"((?:[^"\\]|\\.)*)"\}\].{0,1500}?"publishedTimeText":\{"simpleText":"([^"]+)"', r.text):
