@@ -20,9 +20,11 @@
   "  FALLÓ: no encontré la tabla per_game_stats",
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
-  "[l15] NBA.com",
-  "  FALLÓ: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=45)",
-  "[depth] probando fuentes"
+  "[l15] ESPN box scores",
+  "  juegos guardados 13 (nuevos 13)",
+  "  ok: pretemporada 344 · ej: ('Jaden McDaniels', {'team': 'MIN', 'gp': 2, 'gs': 2, 'min': 18.0, 'pts': 12.5, 'reb': 3.0, 'ast': 0.5, 'stl': 0.5, 'blk': 0.5, 'tpm': 2.5, 'to': 0.5, 'fgp': 0.667})",
+  "[depth] ESPN",
+  "  ok: 529 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
@@ -1278,106 +1280,5 @@
     }
    ]
   }
- ],
- "probe": [
-  {
-   "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/7/depthcharts",
-   "status": 200,
-   "len": 104833,
-   "head": "{\"timestamp\":\"2026-10-08T02:00:26Z\",\"status\":\"success\",\"season\":{\"year\":2027,\"type\":1,\"name\":\"Preseason\"},\"team\":{\"id\":\"7\",\"abbreviation\":\"DEN\",\"location\":\"Denver\",\"name\":\"Nuggets\",\"displayName\":\"Denver Nuggets\",\"clubhouse\":\"https://www.espn.com/nba/team/_/name/den/denver-nuggets\",\"color\":\"0e2240\",\""
-  },
-  {
-   "url": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
-   "status": 403,
-   "len": 425,
-   "head": "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;cdn&#46;nba&#46;com&#47;static&#47;json&#47;staticData&#47;scheduleLeagueV2&#46;json\" on this server.<P>\nReference&#32;&#35;18&#46;1ba7cb17&#46;1791424974&#46;7c31"
-  }
- ],
- "depth_shape": {
-  "timestamp": "2026-10-08T02:00:26Z",
-  "status": "success",
-  "season": {
-   "year": 2027,
-   "type": 1,
-   "name": "Preseason"
-  },
-  "depthchart": [
-   {
-    "id": "1",
-    "name": "Depth Chart",
-    "positions": {
-     "pg": {
-      "position": {
-       "id": "…",
-       "name": "…",
-       "displayName": "…",
-       "abbreviation": "…",
-       "leaf": "…",
-       "parent": "…"
-      },
-      "athletes": [
-       "…",
-       "len=3"
-      ]
-     },
-     "sg": {
-      "position": {
-       "id": "…",
-       "name": "…",
-       "displayName": "…",
-       "abbreviation": "…",
-       "leaf": "…",
-       "parent": "…"
-      },
-      "athletes": [
-       "…",
-       "len=7"
-      ]
-     },
-     "sf": {
-      "position": {
-       "id": "…",
-       "name": "…",
-       "displayName": "…",
-       "abbreviation": "…",
-       "leaf": "…",
-       "parent": "…"
-      },
-      "athletes": [
-       "…",
-       "len=8"
-      ]
-     },
-     "pf": {
-      "position": {
-       "id": "…",
-       "name": "…",
-       "displayName": "…",
-       "abbreviation": "…",
-       "leaf": "…",
-       "parent": "…"
-      },
-      "athletes": [
-       "…",
-       "len=10"
-      ]
-     },
-     "c": {
-      "position": {
-       "id": "…",
-       "name": "…",
-       "displayName": "…",
-       "abbreviation": "…",
-       "leaf": "…"
-      },
-      "athletes": [
-       "…",
-       "len=6"
-      ]
-     }
-    }
-   },
-   "len=1"
-  ]
- }
+ ]
 }
