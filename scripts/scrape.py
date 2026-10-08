@@ -549,24 +549,6 @@ def main():
             res["depth"] = prev["depth"]
             res["sources"]["depth"] = {**prev.get("sources", {}).get("depth", {}), "fresh": False, "error": str(e)[:160]}
 
-    # PROBE temporal: estructura de videos en noticias de ESPN
-    try:
-        j = requests.get("https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news?limit=40", headers=UA, timeout=30).json()
-        med = [a for a in j.get("articles", []) if a.get("type") == "Media" or a.get("video")]
-        DBG["video_count"] = [len(j.get("articles", [])), len(med), [a.get("type") for a in j.get("articles", [])][:40]]
-        if med:
-            a = med[0]
-            DBG["video_article_keys"] = list(a.keys())
-            DBG["video_sample"] = {k: a.get(k) for k in ("video", "links", "images", "duration", "headline", "categories") if k in a}
-        pn = requests.get("https://site.api.espn.com/apis/fantasy/v2/games/fba/news/players?limit=8&playerId=3112335", headers=UA, timeout=30).json()
-        fl = pn.get("feed") or []
-        DBG["pnews_types"] = [(x.get("type"), bool(x.get("video"))) for x in fl]
-        fm = [x for x in fl if x.get("video") or x.get("type") == "Media"]
-        if fm:
-            DBG["pnews_video"] = {k: fm[0].get(k) for k in ("video", "links", "type")}
-    except Exception as e:
-        DBG["video_err"] = str(e)
-
     # recortar: solo jugadores que siguen activos (temporada pasada, depth chart, juegos recientes o rankings)
     alive = set(nm(n) for k in ("last", "cur", "depth", "l15") for n in (res.get(k) or {}))
     alive |= set(nm(n) for l in res["lists"].values() for n, _ in l)
