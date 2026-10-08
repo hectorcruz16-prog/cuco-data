@@ -326,14 +326,32 @@ def probe(url, **kw):
         return None
 
 
+def shape(o, d=0):
+    if d > 5:
+        return "…"
+    if isinstance(o, dict):
+        return {k: shape(v, d + 1) for k, v in list(o.items())[:12]}
+    if isinstance(o, list):
+        return [shape(o[0], d + 1), f"len={len(o)}"] if o else []
+    return o if not isinstance(o, str) else o[:40]
+
+
 def depth_probe():
-    probe("https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/7/depthcharts")
-    probe("https://site.web.api.espn.com/apis/site/v2/sports/basketball/nba/teams/7/depthcharts")
-    probe(f"https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/{SEASON_END}/teams/7/depthcharts")
-    probe("https://www.rotowire.com/basketball/nba-lineups.php")
-    probe("https://www.fantasypros.com/nba/depth-charts.php")
-    probe("https://hoopshype.com/nba-depth-charts/")
-    probe("https://www.espn.com/nba/team/depth/_/name/den")
+    r = probe("https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/7/depthcharts")
+    if r is not None and r.ok:
+        j = r.json()
+        DBG["depth_shape"] = shape({k: v for k, v in j.items() if k != "team"})
+    r = probe("https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json")
+    if r is not None and r.ok:
+        j = r.json()
+        gd = j["leagueSchedule"]["gameDates"]
+        DBG["sched_shape"] = shape(gd[0])
+        done = [g for d in gd for g in d["games"] if g.get("gameStatus") == 3]
+        DBG["sched_done"] = len(done)
+        if done:
+            b = probe(f"https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{done[-1]['gameId']}.json")
+            if b is not None and b.ok:
+                DBG["box_shape"] = shape(b.json()["game"]["homeTeam"])
 
 
 # ------------------------------------------------------------------ main
