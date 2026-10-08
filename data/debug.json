@@ -1,0 +1,103 @@
+{
+ "log": [
+  "[hh] Hashtag Basketball",
+  "  selector ctl00$ContentPlaceHolder1$DDSHOW: ['30', '50', '100', '200', '300', '400', '900'] -> 900",
+  "  selector ctl00$ContentPlaceHolder1$DDPOS: ['All', 'PG', 'SG', 'SF', 'PF', 'C'] -> All",
+  "  selector ctl00$ContentPlaceHolder1$DDTSUM: ['All', 'ATL', 'BKN', 'BOS', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GS', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NO', 'NY', 'OKC', 'ORL', 'PHI', 'PHO', 'POR', 'SA', 'SAC', 'TOR', 'UTA', 'WAS'] -> All",
+  "  selector ctl00$ContentPlaceHolder1$DDDURATION: ['0', '1', '7', '14', '30', '2025', '2024', '2023', '2022', '2021'] -> 2025",
+  "  leídos 200: [['Nikola Jokic N.Jokic', 1], ['Victor Wembanyama V.Wembanyama', 2], ['Shai Gilgeous-Alexander S.Gilgeous-Alexander', 3], ['Anthony Davis A.Davis', 4], ['Damian Lillard D.Lillard', 5], ['Luka Doncic L.Doncic', 6]]",
+  "  FALLÓ: las estrellas no aparecen arriba (lectura dudosa)",
+  "[hhp] Hashtag · proyecciones",
+  "  selector ctl00$ContentPlaceHolder1$DDPOS: ['All', 'PG', 'SG', 'SF', 'PF', 'C'] -> All",
+  "  selector ctl00$ContentPlaceHolder1$DDTSUM: ['All', 'ATL', 'BKN', 'BOS', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GS', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NO', 'NY', 'OKC', 'ORL', 'PHI', 'PHO', 'POR', 'SA', 'SAC', 'TOR', 'UTA', 'WAS'] -> All",
+  "  selector ctl00$ContentPlaceHolder1$DDDURATION: ['0', '77', '1414', '3030', '777', '141414', '303030'] -> 303030",
+  "  leídos 0: []",
+  "  FALLÓ: pocos jugadores (0)",
+  "[fp] FantasyPros",
+  "  leídos 307: [['Victor Wembanyama', 1], ['Nikola Jokic', 2], ['Luka Doncic', 3], ['Shai Gilgeous-Alexander', 4], ['Cade Cunningham', 5], ['Anthony Edwards', 6]]",
+  "  ok: 307 jugadores · top: [['Victor Wembanyama', 1], ['Nikola Jokic', 2], ['Luka Doncic', 3]]",
+  "[fpa] FantasyPros · ADP (ESPN/Yahoo/CBS)",
+  "  leídos 223: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Luka Doncic (LAL -', 4], ['Cade Cunningham (DET -', 5], ['Giannis Antetokounmpo (MIA -', 6]]",
+  "  FALLÓ: las estrellas no aparecen arriba (lectura dudosa)",
+  "[bbref] 2026",
+  "  ok: 583 jugadores",
+  "[bbref] 2027",
+  "  FALLÓ: no encontré la tabla per_game_stats"
+ ],
+ "tables": [
+  {
+   "heads": [
+    "R#",
+    "PLAYER",
+    "POS",
+    "TEAM",
+    "GP",
+    "MPG",
+    "TOTAL"
+   ],
+   "n": 200,
+   "sample": [
+    {
+     "R#": "1",
+     "PLAYER": "Nikola Jokic N.Jokic",
+     "POS": "C",
+     "TEAM": "DEN",
+     "GP": "70",
+     "MPG": "36.7",
+     "TOTAL": "0.00"
+    },
+    {
+     "R#": "2",
+     "PLAYER": "Victor Wembanyama V.Wembanyama",
+     "POS": "C",
+     "TEAM": "SA",
+     "GP": "46",
+     "MPG": "33.2",
+     "TOTAL": "0.00"
+    },
+    {
+     "R#": "3",
+     "PLAYER": "Shai Gilgeous-Alexander S.Gilgeous-Alexander",
+     "POS": "PG,SG",
+     "TEAM": "OKC",
+     "GP": "76",
+     "MPG": "34.2",
+     "TOTAL": "0.00"
+    }
+   ]
+  },
+  {
+   "heads": [
+    "RANK",
+    "PLAYER",
+    "YAHOO",
+    "ESPN",
+    "AVG"
+   ],
+   "n": 223,
+   "sample": [
+    {
+     "RANK": "1",
+     "PLAYER": "Nikola Jokic (DEN - C)",
+     "YAHOO": "2",
+     "ESPN": "1",
+     "AVG": "1.5"
+    },
+    {
+     "RANK": "2",
+     "PLAYER": "Victor Wembanyama (SAS - C)",
+     "YAHOO": "1",
+     "ESPN": "3",
+     "AVG": "2.0"
+    },
+    {
+     "RANK": "3",
+     "PLAYER": "Shai Gilgeous-Alexander (OKC - PG)",
+     "YAHOO": "4",
+     "ESPN": "2",
+     "AVG": "3.0"
+    }
+   ]
+  }
+ ]
+}
