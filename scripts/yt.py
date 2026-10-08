@@ -44,20 +44,21 @@ def main():
         r = requests.get("https://www.youtube.com/@NBA/videos", headers={**UA, "Accept-Language": "en-US,en;q=0.9"}, cookies={"CONSENT": "YES+1"}, timeout=30)
         diag.append(f"page {r.status_code} {len(r.text)}")
         T = r.text
-        k = T.find('"videoId":"')
-        diag.append({"n_vid": T.count('"videoId":"'), "n_pub": T.count("publishedTimeText"), "n_lockup": T.count("lockupViewModel"),
-                     "n_vr": T.count("videoRenderer"), "n_rich": T.count("richItemRenderer"), "sample": T[k - 200:k + 2500] if k > 0 else ""})
         now = datetime.now(timezone.utc)
         ids = {v["id"] for v in fresh}
-        for m in re.finditer(r'"videoId":"([\w-]{11})".{0,1500}?"title":\{"runs":\[\{"text":"((?:[^"\\]|\\.)*)"\}\].{0,1500}?"publishedTimeText":\{"simpleText":"([^"]+)"', r.text):
-            vid, t, ago = m.group(1), json.loads('"' + m.group(2) + '"'), m.group(3)
-            if vid in ids:
+        n_ok = 0
+        for ch in T.split('"lockupViewModel":{')[1:]:
+            vid = re.search(r'"contentId":"([\w-]{11})"', ch) or re.search(r'"videoId":"([\w-]{11})"', ch)
+            tt = re.search(r'"lockupMetadataViewModel":\{"title":\{"content":"((?:[^"\\]|\\.)*)"', ch)
+            ago = re.search(r'"(?:accessibilityLabel|content)":"(\d+) (second|minute|hour|day|week|month)s? ago"', ch)
+            if not (vid and tt) or vid.group(1) in ids:
                 continue
-            n = int((re.search(r"(\d+)", ago) or [0, 0])[1] or 0)
-            unit = 60 if "minute" in ago else 3600 if "hour" in ago else 86400 if "day" in ago else 604800 if "week" in ago else 1
-            at = (now - timedelta(seconds=n * unit)).isoformat(timespec="seconds")
-            fresh.append({"id": vid, "t": t, "at": at})
-            ids.add(vid)
+            unit = {"second": 1, "minute": 60, "hour": 3600, "day": 86400, "week": 604800, "month": 2592000}[ago.group(2)] if ago else 0
+            at = (now - timedelta(seconds=int(ago.group(1)) * unit)).isoformat(timespec="seconds") if ago else now.isoformat(timespec="seconds")
+            fresh.append({"id": vid.group(1), "t": json.loads('"' + tt.group(1) + '"'), "at": at})
+            ids.add(vid.group(1))
+            n_ok += 1
+        diag.append(f"page videos {n_ok}")
     except Exception as e:
         diag.append(f"page err {e}")
     have = {v["id"] for v in old}
