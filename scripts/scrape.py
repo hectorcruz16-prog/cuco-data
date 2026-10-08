@@ -555,6 +555,9 @@ def main():
     for k in ("gph", "adv"):
         if res.get(k):
             res[k] = {n: v for n, v in res[k].items() if nm(n) in alive}
+    for k in ("gph", "adv"):
+        if res.get(k) and k in res["sources"]:
+            res["sources"][k]["count"] = len(res[k])
     for v in (res.get("adv") or {}).values():
         v.pop("mp", None); v.pop("ws48", None)
 
