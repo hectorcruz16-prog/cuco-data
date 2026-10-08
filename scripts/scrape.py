@@ -93,6 +93,8 @@ def aspnet_max(url):
     for inp in form.find_all("input"):
         if inp.get("name") and inp.get("type", "text") in ("hidden", "text"):
             data[inp["name"]] = inp.get("value", "")
+        elif inp.get("name") and inp.get("type") == "checkbox" and inp.has_attr("checked"):
+            data[inp["name"]] = inp.get("value") or "on"  # las categorías marcadas (sin esto el TOTAL sale 0)
     target = None
     for sel in form.find_all("select"):
         name = sel.get("name")
@@ -268,8 +270,8 @@ def main():
                              "count": ps.get("count", 0), "fresh": False, "error": err}
 
     jobs = [
-        ("hh", "Hashtag Basketball", hashtag_rankings),
-        ("hhp", "Hashtag · proyecciones", hashtag_projections),
+        ("hh", "Hashtag Basketball (ranking 9-cat temporada pasada)", hashtag_rankings),
+        ("hhp", "Hashtag · proyecciones 2026-27 (top 30 gratis)", hashtag_projections),
         ("fp", "FantasyPros", fp_rankings),
         ("fpa", "FantasyPros · ADP (ESPN/Yahoo/CBS)", fp_adp),
     ]
@@ -279,11 +281,11 @@ def main():
             log(f"[{k}] {name}")
             url, lst, proj = fn()
             log(f"  leídos {len(lst or [])}: {(lst or [])[:6]}")
-            err = valid_list(lst)
+            err = None if k == "hhp" else valid_list(lst)
             if err:
                 raise RuntimeError(err)
             if k == "hhp":  # mismo ranking que "hh": solo se guardan las proyecciones por categoría
-                if not proj or len(proj) < 100:
+                if not proj or len(proj) < 25:  # gratis Hashtag solo enseña el top 30 proyectado
                     raise RuntimeError(f"pocas proyecciones ({len(proj or {})})")
                 res["proj"] = proj
                 res["sources"][k] = {"name": name, "url": url, "ok": True, "at": at, "count": len(proj), "fresh": True, "kind": "proj"}

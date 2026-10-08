@@ -4,8 +4,8 @@ Robot gratis (GitHub Actions) que junta datos para **Cuco Fantasy** dos veces al
 
 | Clave | Fuente | Qué es |
 |---|---|---|
-| `hh` | Hashtag Basketball | ranking (todos los jugadores, no solo 25) |
-| `hhp` | Hashtag Basketball | proyecciones por categoría (`proj`) |
+| `hh` | Hashtag Basketball | ranking 9-cat de la temporada pasada (todos, ~580) |
+| `hhp` | Hashtag Basketball | proyecciones 2026-27 por categoría (`proj`, solo top 30: el resto es Premium) |
 | `fp` | FantasyPros | ranking de consenso de expertos |
 | `fpa` | FantasyPros | ADP promedio de ESPN/Yahoo/CBS |
 | `bblast` / `bbcur` | Basketball-Reference | promedios reales temporada pasada / actual (`last`, `cur`) |
