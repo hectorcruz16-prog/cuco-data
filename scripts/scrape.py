@@ -66,8 +66,9 @@ def num(x):
 
 def clean_name(s):
     s = re.sub(r"\s+", " ", s).strip()
-    s = re.sub(r"\s*\((?:[A-Z]{2,3}|FA)[^)]*\)\s*$", "", s)  # "Nikola Jokic (DEN - C)"
-    return s
+    s = re.sub(r"\s*\(.*$", "", s)  # "Nikola Jokic (DEN - C)"
+    s = re.sub(r"\s+[A-Z][a-zA-Z'.]*\.[A-Z][\w'.-]*(\s+(Jr|Sr|II|III|IV)\.?)?$", "", s)  # Hashtag: "Nikola Jokic N.Jokic"
+    return s.strip()
 
 
 # ------------------------------------------------------------------ ASP.NET (Hashtag)
@@ -92,8 +93,9 @@ def aspnet_max(url):
         chosen = sel.find("option", selected=True)
         data[name] = (chosen.get("value") if chosen else (opts[0] if opts else ""))
         nums = [o for o in opts if re.fullmatch(r"\d+", o)]
-        if opts and (any(o.lower() == "all" for o in opts) or (nums and max(map(int, nums)) >= 200)):
-            best = next((o for o in opts if o.lower() == "all"), None) or max(nums, key=int)
+        # solo el selector de "cuántos jugadores" (DDSHOW); los demás se quedan como vienen
+        if name and name.upper().endswith("SHOW") and nums and max(map(int, nums)) >= 200:
+            best = max(nums, key=int)
             log(f"  selector {name}: {opts} -> {best}")
             data[name] = best
             target = name
@@ -114,6 +116,7 @@ def parse_table(html, need=("PLAYER",)):
     """Devuelve filas como dicts usando los encabezados de la tabla más grande que tenga PLAYER."""
     soup = BeautifulSoup(html, "lxml")
     best = []
+    DBG.setdefault("alltables", []).append([[c.get_text(" ", strip=True)[:20] for c in (t.find("tr") or t).find_all(["th", "td"])][:20] + [len(t.find_all("tr"))] for t in soup.find_all("table")][:8])
     for t in soup.find_all("table"):
         heads = None
         rows = []
