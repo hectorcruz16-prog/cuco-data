@@ -21,8 +21,8 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 15 (nuevos 1)",
-  "  ok: pretemporada 369 · ej: ('Jaden McDaniels', {'team': 'MIN', 'gp': 2, 'gs': 2, 'min': 18.0, 'pts': 12.5, 'reb': 3.0, 'ast': 0.5, 'stl': 0.5, 'blk': 0.5, 'tpm': 2.5, 'to': 0.5, 'fgp': 0.667})",
+  "  juegos guardados 16 (nuevos 1)",
+  "  ok: pretemporada 383 · ej: ('Jaden McDaniels', {'team': 'MIN', 'gp': 2, 'gs': 2, 'min': 18.0, 'pts': 12.5, 'reb': 3.0, 'ast': 0.5, 'stl': 0.5, 'blk': 0.5, 'tpm': 2.5, 'to': 0.5, 'fgp': 0.667})",
   "[depth] ESPN",
   "  ok: 529 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
@@ -1280,5 +1280,13 @@
     }
    ]
   }
- ]
+ ],
+ "appyt": {
+  "status": 200,
+  "body": "{\"updated\":\"2026-10-08T02:50:42.576Z\",\"items\":[]}"
+ },
+ "appapi": {
+  "status": 200,
+  "body": "{\"ok\":true,\"traduccion\":\"Groq\",\"espn_liga\":false,\"nube\":true,\"ia\":\"Groq → OpenAI Luna → OpenRouter → Gemini\",\"rutas\":[\"/api/players\",\"/api/scoreboard\",\"/api/game\",\"/api/injuries\",\"/api/news\"]}"
+ }
 }
