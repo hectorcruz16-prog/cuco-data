@@ -549,6 +549,33 @@ def main():
             res["depth"] = prev["depth"]
             res["sources"]["depth"] = {**prev.get("sources", {}).get("depth", {}), "fresh": False, "error": str(e)[:160]}
 
+    # PROBE temporal: highlights NBA (YouTube RSS y nba.com)
+    try:
+        r = requests.get("https://www.youtube.com/feeds/videos.xml?channel_id=UCWJ2lWNubArHWmf3FIHbfcQ", headers=UA, timeout=30)
+        DBG["yt"] = {"status": r.status_code, "titles": re.findall(r"<title>([^<]+)</title>", r.text)[:16], "ids": re.findall(r"<yt:videoId>([^<]+)</yt:videoId>", r.text)[:16],
+                     "pub": re.findall(r"<published>([^<]+)</published>", r.text)[:16]}
+        r = requests.get("https://www.nba.com/games", headers=UA, timeout=30)
+        nd = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text, re.S)
+        DBG["nbagames"] = {"status": r.status_code, "len": len(r.text), "next": bool(nd)}
+        if nd:
+            t = nd.group(1)
+            DBG["nbagames"]["mp4"] = re.findall(r'https?://[^"\\]+?\.mp4', t)[:8]
+            DBG["nbagames"]["m3u8"] = re.findall(r'https?://[^"\\]+?\.m3u8', t)[:8]
+            DBG["nbagames"]["gameurls"] = re.findall(r'"/game/[^"]+"', t)[:8]
+            DBG["nbagames"]["video_keys"] = sorted(set(re.findall(r'"([a-zA-Z]*(?:[Vv]ideo|[Rr]ecap|[Hh]ighlight)[a-zA-Z]*)"\s*:', t)))[:40]
+            gu = re.findall(r'"(/game/[a-z]{3}-vs-[a-z]{3}-\d+)"', t)
+            if gu:
+                g = requests.get("https://www.nba.com" + gu[0], headers=UA, timeout=30)
+                nd2 = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', g.text, re.S)
+                t2 = nd2.group(1) if nd2 else ""
+                DBG["nbagame"] = {"url": gu[0], "status": g.status_code, "mp4": re.findall(r'https?://[^"\\]+?\.mp4', t2)[:8],
+                                  "m3u8": re.findall(r'https?://[^"\\]+?\.m3u8', t2)[:8],
+                                  "video_keys": sorted(set(re.findall(r'"([a-zA-Z]*(?:[Vv]ideo|[Rr]ecap|[Hh]ighlight)[a-zA-Z]*)"\s*:', t2)))[:40]}
+                i = t2.find("recap")
+                DBG["nbagame"]["ctx"] = t2[max(0, i - 300):i + 900] if i >= 0 else ""
+    except Exception as e:
+        DBG["hl_err"] = str(e)
+
     # recortar: solo jugadores que siguen activos (temporada pasada, depth chart, juegos recientes o rankings)
     alive = set(nm(n) for k in ("last", "cur", "depth", "l15") for n in (res.get(k) or {}))
     alive |= set(nm(n) for l in res["lists"].values() for n, _ in l)
