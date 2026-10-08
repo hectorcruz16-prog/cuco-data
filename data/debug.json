@@ -2,7 +2,8 @@
  "log": [
   "[hh] Hashtag Basketball (ranking 9-cat temporada pasada)",
   "  selector ctl00$ContentPlaceHolder1$DDSHOW: ['30', '50', '100', '200', '300', '400', '900'] -> 900",
-  "  FALLÓ: HTTPSConnectionPool(host='hashtagbasketball.com', port=443): Read timed out. (read timeout=60)",
+  "  leídos 583: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Tyrese Maxey', 4], ['Luka Doncic', 5], ['Kawhi Leonard', 6]]",
+  "  ok: 583 jugadores · top: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3]]",
   "[hhp] Hashtag · proyecciones 2026-27 (top 30 gratis)",
   "  no encontré selector de cantidad; uso la página tal cual",
   "  leídos 30: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Luka Doncic', 4], ['Giannis Antetokounmpo', 5], ['Cade Cunningham', 6]]",
@@ -1030,6 +1031,27 @@
    [
     "R#",
     "PLAYER",
+    "POS",
+    "TEAM",
+    "GP",
+    "MPG",
+    "FG%",
+    "FT%",
+    "3PM",
+    "PTS",
+    "TREB",
+    "AST",
+    "STL",
+    "BLK",
+    "TO",
+    "TOTAL",
+    628
+   ]
+  ],
+  [
+   [
+    "R#",
+    "PLAYER",
     "ADP",
     "POS",
     "TEAM",
@@ -1067,6 +1089,83 @@
   ]
  ],
  "tables": [
+  {
+   "heads": [
+    "R#",
+    "PLAYER",
+    "POS",
+    "TEAM",
+    "GP",
+    "MPG",
+    "FG%",
+    "FT%",
+    "3PM",
+    "PTS",
+    "TREB",
+    "AST",
+    "STL",
+    "BLK",
+    "TO",
+    "TOTAL"
+   ],
+   "n": 583,
+   "sample": [
+    {
+     "R#": "1",
+     "PLAYER": "Nikola Jokic N.Jokic",
+     "POS": "C",
+     "TEAM": "DEN",
+     "GP": "65",
+     "MPG": "34.9",
+     "FG%": "0.569 (9.9/17.4)",
+     "FT%": "0.831 (6.1/7.4)",
+     "3PM": "1.7",
+     "PTS": "27.7",
+     "TREB": "12.9",
+     "AST": "10.7",
+     "STL": "1.4",
+     "BLK": "0.8",
+     "TO": "3.7",
+     "TOTAL": "16.28"
+    },
+    {
+     "R#": "2",
+     "PLAYER": "Victor Wembanyama V.Wembanyama",
+     "POS": "PF,C",
+     "TEAM": "SA",
+     "GP": "64",
+     "MPG": "29.2",
+     "FG%": "0.512 (8.6/16.9)",
+     "FT%": "0.827 (5.8/7.0)",
+     "3PM": "1.9",
+     "PTS": "25.0",
+     "TREB": "11.5",
+     "AST": "3.1",
+     "STL": "1.0",
+     "BLK": "3.1",
+     "TO": "2.4",
+     "TOTAL": "14.22"
+    },
+    {
+     "R#": "3",
+     "PLAYER": "Shai Gilgeous-Alexander S.Gilgeous-Alexander",
+     "POS": "PG",
+     "TEAM": "OKC",
+     "GP": "68",
+     "MPG": "33.2",
+     "FG%": "0.553 (10.8/19.4)",
+     "FT%": "0.879 (7.9/9.0)",
+     "3PM": "1.7",
+     "PTS": "31.1",
+     "TREB": "4.3",
+     "AST": "6.6",
+     "STL": "1.4",
+     "BLK": "0.8",
+     "TO": "2.2",
+     "TOTAL": "13.45"
+    }
+   ]
+  },
   {
    "heads": [
     "R#",
