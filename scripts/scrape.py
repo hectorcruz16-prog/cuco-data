@@ -549,6 +549,15 @@ def main():
             res["depth"] = prev["depth"]
             res["sources"]["depth"] = {**prev.get("sources", {}).get("depth", {}), "fresh": False, "error": str(e)[:160]}
 
+    # recortar: solo jugadores que siguen activos (temporada pasada, depth chart, juegos recientes o rankings)
+    alive = set(nm(n) for k in ("last", "cur", "depth", "l15") for n in (res.get(k) or {}))
+    alive |= set(nm(n) for l in res["lists"].values() for n, _ in l)
+    for k in ("gph", "adv"):
+        if res.get(k):
+            res[k] = {n: v for n, v in res[k].items() if nm(n) in alive}
+    for v in (res.get("adv") or {}).values():
+        v.pop("mp", None); v.pop("ws48", None)
+
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
         json.dump(res, f, ensure_ascii=False, separators=(",", ":"))
