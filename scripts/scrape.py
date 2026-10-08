@@ -82,6 +82,13 @@ def aspnet_max(url):
     form = soup.find("form")
     if not form:
         return r.text
+    DBG.setdefault("forms", {})[url] = {
+        "selects": {sel.get("name"): {"opts": [((o.get("value") or "") + "=" + o.text.strip())[:30] for o in sel.find_all("option")][:15],
+                                      "sel": (sel.find("option", selected=True) or {}).get("value") if sel.find("option", selected=True) else None} for sel in form.find_all("select")},
+        "inputs": [(i.get("name"), i.get("type"), (i.get("value") or "")[:30]) for i in form.find_all("input") if not (i.get("name") or "").startswith("__")][:30],
+        "postbacks": sorted(set(re.findall(r"__doPostBack\(&#39;([^&]+)&#39;|__doPostBack\('([^']+)'", r.text) and [a or b for a, b in re.findall(r"__doPostBack\(&#39;([^&]+)&#39;|__doPostBack\('([^']+)'", r.text)]))[:30],
+        "text": [t for t in re.findall(r">([^<>]{3,60})<", r.text) if re.search(r"(?i)show|all players|more|page", t)][:20],
+    }
     data = {}
     for inp in form.find_all("input"):
         if inp.get("name") and inp.get("type", "text") in ("hidden", "text"):
