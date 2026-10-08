@@ -549,15 +549,6 @@ def main():
             res["depth"] = prev["depth"]
             res["sources"]["depth"] = {**prev.get("sources", {}).get("depth", {}), "fresh": False, "error": str(e)[:160]}
 
-    # PROBE temporal: /api/yt de la app
-    try:
-        r = requests.get("https://cucosdraft.pages.dev/api/yt", headers=UA, timeout=30)
-        DBG["appyt"] = {"status": r.status_code, "body": r.text[:1500]}
-        r = requests.get("https://cucosdraft.pages.dev/api/", headers=UA, timeout=30)
-        DBG["appapi"] = {"status": r.status_code, "body": r.text[:400]}
-    except Exception as e:
-        DBG["appyt_err"] = str(e)
-
     # recortar: solo jugadores que siguen activos (temporada pasada, depth chart, juegos recientes o rankings)
     alive = set(nm(n) for k in ("last", "cur", "depth", "l15") for n in (res.get(k) or {}))
     alive |= set(nm(n) for l in res["lists"].values() for n, _ in l)
