@@ -17,7 +17,16 @@
   "[bbref] 2026",
   "  ok: 583 jugadores",
   "[bbref] 2027",
-  "  FALLÓ: no encontré la tabla per_game_stats"
+  "  FALLÓ: no encontré la tabla per_game_stats",
+  "[gph] 2024",
+  "  ok: 573",
+  "[gph] 2025",
+  "  ok: 570",
+  "[adv] 2026",
+  "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
+  "[l15] NBA.com",
+  "  FALLÓ: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=45)",
+  "[depth] probando fuentes"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
@@ -1272,6 +1281,50 @@
      "AVG": "3.0"
     }
    ]
+  }
+ ],
+ "probe": [
+  {
+   "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/7/depthcharts",
+   "status": 200,
+   "len": 104833,
+   "head": "{\"timestamp\":\"2026-10-08T02:01:00Z\",\"status\":\"success\",\"season\":{\"year\":2027,\"type\":1,\"name\":\"Preseason\"},\"team\":{\"id\":\"7\",\"abbreviation\":\"DEN\",\"location\":\"Denver\",\"name\":\"Nuggets\",\"displayName\":\"Denver Nuggets\",\"clubhouse\":\"https://www.espn.com/nba/team/_/name/den/denver-nuggets\",\"color\":\"0e2240\",\""
+  },
+  {
+   "url": "https://site.web.api.espn.com/apis/site/v2/sports/basketball/nba/teams/7/depthcharts",
+   "status": 200,
+   "len": 104833,
+   "head": "{\"timestamp\":\"2026-10-08T02:01:00Z\",\"status\":\"success\",\"season\":{\"year\":2027,\"type\":1,\"name\":\"Preseason\"},\"team\":{\"id\":\"7\",\"abbreviation\":\"DEN\",\"location\":\"Denver\",\"name\":\"Nuggets\",\"displayName\":\"Denver Nuggets\",\"clubhouse\":\"https://www.espn.com/nba/team/_/name/den/denver-nuggets\",\"color\":\"0e2240\",\""
+  },
+  {
+   "url": "https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2027/teams/7/depthcharts",
+   "status": 200,
+   "len": 6629,
+   "head": "{\"count\":1,\"pageIndex\":1,\"pageSize\":25,\"pageCount\":1,\"items\":[{\"id\":\"1\",\"name\":\"Depth Chart\",\"positions\":{\"pg\":{\"position\":{\"$ref\":\"http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/positions/1?lang=en&region=us\",\"id\":\"1\",\"name\":\"Point Guard\",\"displayName\":\"Point Guard\",\"abbreviation\""
+  },
+  {
+   "url": "https://www.rotowire.com/basketball/nba-lineups.php",
+   "status": 200,
+   "len": 426663,
+   "head": "\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n            <script src=\"https://bet.rotowire.com/js/app.js\"></script>\n        \n    <script>\n        window.dataLayer = window.dataLayer || [];\n        window.dataLayer.push({\"sport_name\":\"nba\",\"sport_content\":\"fantasy\",\"event\":\"content_grouping\"});\n    </sc"
+  },
+  {
+   "url": "https://www.fantasypros.com/nba/depth-charts.php",
+   "status": 404,
+   "len": 221498,
+   "head": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    \n    <title>Page Not Found (404) | FantasyPros</title>\n    <meta property=\"og:title\" content=\"Page Not Found (404) | FantasyPros\" />\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n    <link rel=\"preconnect\" href=\"https://cdn.fan"
+  },
+  {
+   "url": "https://hoopshype.com/nba-depth-charts/",
+   "status": 402,
+   "len": 254,
+   "head": "<!doctype html><html><head><title>Access Restricted</title></head><body><h1>Access Restricted</h1><p>We're unable to allow access to this page at this time.<br>If you believe this is an error, please try again later or contact support. </p></body></html>"
+  },
+  {
+   "url": "https://www.espn.com/nba/team/depth/_/name/den",
+   "status": 202,
+   "len": 2015,
+   "head": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title></title>\n    <style>\n        body {\n            font-family: \"Arial\";\n        }\n    </style>\n    <script type=\"text/javascript\">\n    window.awsWafCoo"
   }
  ]
 }
