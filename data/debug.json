@@ -19,6 +19,1006 @@
   "[bbref] 2027",
   "  FALLÓ: no encontré la tabla per_game_stats"
  ],
+ "forms": {
+  "https://hashtagbasketball.com/fantasy-basketball-rankings": {
+   "selects": {
+    "ctl00$ContentPlaceHolder1$DDSHOW": {
+     "opts": [
+      "30=Top 30",
+      "50=50",
+      "100=100",
+      "200=Top 200",
+      "300=300",
+      "400=400",
+      "900=All"
+     ],
+     "sel": "200"
+    },
+    "ctl00$ContentPlaceHolder1$DDGAMES": {
+     "opts": [
+      "1=1",
+      "2=2",
+      "3=3",
+      "5=5",
+      "10=10",
+      "15=15",
+      "20=20"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DropDownList1": {
+     "opts": [
+      "On=On",
+      "Off=Off"
+     ],
+     "sel": "Off"
+    },
+    "ctl00$ContentPlaceHolder1$DropDownList2": {
+     "opts": [
+      "On=On",
+      "Off=Off"
+     ],
+     "sel": "Off"
+    },
+    "ctl00$ContentPlaceHolder1$DropDownList3": {
+     "opts": [
+      "On=On",
+      "Off=Off"
+     ],
+     "sel": "Off"
+    },
+    "ctl00$ContentPlaceHolder1$DDPOS": {
+     "opts": [
+      "All=All",
+      "PG=PG",
+      "SG=SG",
+      "SF=SF",
+      "PF=PF",
+      "C=C"
+     ],
+     "sel": "All"
+    },
+    "ctl00$ContentPlaceHolder1$DDPOSFROM": {
+     "opts": [
+      "1=Yahoo",
+      "3=ESPN",
+      "2=Fantrax",
+      "0=Depth Chart"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDTSUM": {
+     "opts": [
+      "All=All",
+      "ATL=ATL",
+      "BKN=BKN",
+      "BOS=BOS",
+      "CHA=CHA",
+      "CHI=CHI",
+      "CLE=CLE",
+      "DAL=DAL",
+      "DEN=DEN",
+      "DET=DET",
+      "GS=GS",
+      "HOU=HOU",
+      "IND=IND",
+      "LAC=LAC",
+      "LAL=LAL"
+     ],
+     "sel": "All"
+    },
+    "ctl00$ContentPlaceHolder1$DDDURATION": {
+     "opts": [
+      "0=2025-26 Rest of Season Ranki",
+      "1=2025-26 NBA Regular Season (",
+      "7=Last 7 days of the 2025-26 N",
+      "14=Last 14 days of the 2025-26",
+      "30=Last 30 days of the 2025-26",
+      "2025=2024-25 NBA Regular Seaso",
+      "2024=2023-24 NBA Regular Seaso",
+      "2023=2022-23 NBA Regular Seaso",
+      "2022=2021-22 NBA Regular Seaso",
+      "2021=2020-21 NBA Regular Seaso"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDRANK": {
+     "opts": [
+      "TOT=Total",
+      "AVG=Averages"
+     ],
+     "sel": "AVG"
+    },
+    "ctl00$ContentPlaceHolder1$DDTYPE": {
+     "opts": [
+      "STA=Standard",
+      "H2H=H2H",
+      "M1=Minus 1"
+     ],
+     "sel": "H2H"
+    },
+    "ctl00$ContentPlaceHolder1$DDFGM": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDFGP": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDFTM": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDFTP": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DD3PM": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DD3PP": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDPTS": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDATO": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDDREB": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDOREB": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDREB": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDAST": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDSTL": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDBLK": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDTO": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": ".25"
+    },
+    "ctl00$ContentPlaceHolder1$DDDD": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    }
+   },
+   "inputs": [
+    [
+     "ctl00$ContentPlaceHolder1$CBFGM",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBFGP",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBFTM",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBFTP",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CB3PM",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CB3PP",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBPTS",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBATO",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBDREB",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBOREB",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBREB",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBAST",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBSTL",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBBLK",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBTO",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBDD",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFfgpzz",
+     "hidden",
+     "elite"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
+     "hidden",
+     "3.5453845000"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
+     "hidden",
+     "vgood"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
+     "hidden",
+     "1.7214040000"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
+     "hidden",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
+     "hidden",
+     "0.0229347403"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
+     "hidden",
+     "vgood"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
+     "hidden",
+     "2.1849637105"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
+     "hidden",
+     "elite"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
+     "hidden",
+     "3.3199149961"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
+     "hidden",
+     "elite"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
+     "hidden",
+     "4.1838093345"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
+     "hidden",
+     "good"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
+     "hidden",
+     "1.1903463834"
+    ]
+   ],
+   "postbacks": [
+    "ctl00$ContentPlaceHolder1$GridView1",
+    "ctl00$LoginStatus2$ctl02"
+   ],
+   "text": [
+    "Show"
+   ]
+  },
+  "https://hashtagbasketball.com/fantasy-basketball-projections": {
+   "selects": {
+    "ctl00$ContentPlaceHolder1$DDSHOW": {
+     "opts": [
+      "30=Top 30"
+     ],
+     "sel": "30"
+    },
+    "ctl00$ContentPlaceHolder1$DDGAMES": {
+     "opts": [
+      "0=0",
+      "1=1",
+      "2=2",
+      "3=3",
+      "5=5",
+      "10=10",
+      "15=15",
+      "20=20",
+      "30=30",
+      "40=40",
+      "50=50",
+      "60=60",
+      "70=70"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DropDownList1": {
+     "opts": [
+      "On=On",
+      "Off=Off"
+     ],
+     "sel": "Off"
+    },
+    "ctl00$ContentPlaceHolder1$DDPOS": {
+     "opts": [
+      "All=All",
+      "PG=PG",
+      "SG=SG",
+      "SF=SF",
+      "PF=PF",
+      "C=C"
+     ],
+     "sel": "All"
+    },
+    "ctl00$ContentPlaceHolder1$DDPOSFROM": {
+     "opts": [
+      "1=Yahoo",
+      "3=ESPN",
+      "2=Fantrax",
+      "0=Depth Chart"
+     ],
+     "sel": "3"
+    },
+    "ctl00$ContentPlaceHolder1$DDTSUM": {
+     "opts": [
+      "All=All",
+      "ATL=ATL",
+      "BKN=BKN",
+      "BOS=BOS",
+      "CHA=CHA",
+      "CHI=CHI",
+      "CLE=CLE",
+      "DAL=DAL",
+      "DEN=DEN",
+      "DET=DET",
+      "GS=GS",
+      "HOU=HOU",
+      "IND=IND",
+      "LAC=LAC",
+      "LAL=LAL"
+     ],
+     "sel": "All"
+    },
+    "ctl00$ContentPlaceHolder1$DDDURATION": {
+     "opts": [
+      "0=2026-27 Rest of Season Proje",
+      "77=2026-27 Rest of Season Proj",
+      "1414=2026-27 Rest of Season Pr",
+      "3030=2026-27 Rest of Season Pr",
+      "777=2026-27 Short Term Project",
+      "141414=2026-27 Short Term Proj",
+      "303030=2026-27 Short Term Proj"
+     ],
+     "sel": "0"
+    },
+    "ctl00$ContentPlaceHolder1$DDRANK": {
+     "opts": [
+      "TOT=Total",
+      "AVG=Averages",
+      "COM=Combined"
+     ],
+     "sel": "AVG"
+    },
+    "ctl00$ContentPlaceHolder1$DDTYPE": {
+     "opts": [
+      "STA=Standard",
+      "H2H=H2H",
+      "M1=Minus 1"
+     ],
+     "sel": "H2H"
+    },
+    "ctl00$ContentPlaceHolder1$DDPEN": {
+     "opts": [
+      "0.00=Off",
+      "0.10=10%",
+      "0.20=20%",
+      "0.30=30%"
+     ],
+     "sel": "0.20"
+    },
+    "ctl00$ContentPlaceHolder1$DDFGM": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDFGP": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDFTM": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDFTP": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DD3PM": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DD3PP": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDPTS": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDATO": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDDREB": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDOREB": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDREB": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDAST": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDSTL": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDBLK": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    },
+    "ctl00$ContentPlaceHolder1$DDTO": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": ".25"
+    },
+    "ctl00$ContentPlaceHolder1$DDDD": {
+     "opts": [
+      "3=x 3",
+      "2.5=x 2.5",
+      "2=x 2",
+      "1.5=x 1.5",
+      "1.25=x 1.25",
+      "1=x 1",
+      ".75=x 0.75",
+      ".5=x 0.5",
+      ".25=x 0.25"
+     ],
+     "sel": "1"
+    }
+   },
+   "inputs": [
+    [
+     "ctl00$ContentPlaceHolder1$CBFGM",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBFGP",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBFTM",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBFTP",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CB3PM",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CB3PP",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBPTS",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBATO",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBDREB",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBOREB",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBREB",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBAST",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBSTL",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBBLK",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBTO",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$CBDD",
+     "checkbox",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFfgpzz",
+     "hidden",
+     "elite"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
+     "hidden",
+     "3.9126634000"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
+     "hidden",
+     "good"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
+     "hidden",
+     "0.9818000000"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
+     "hidden",
+     ""
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
+     "hidden",
+     "0.2159263450"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
+     "hidden",
+     "vgood"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
+     "hidden",
+     "2.2206708905"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
+     "hidden",
+     "elite"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
+     "hidden",
+     "3.1006974021"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
+     "hidden",
+     "elite"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
+     "hidden",
+     "3.8840439726"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
+     "hidden",
+     "vgood"
+    ],
+    [
+     "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
+     "hidden",
+     "1.7166781864"
+    ]
+   ],
+   "postbacks": [
+    "ctl00$ContentPlaceHolder1$GridView1",
+    "ctl00$LoginStatus2$ctl02"
+   ],
+   "text": [
+    "MORE INFORMATION",
+    "Show"
+   ]
+  }
+ },
  "alltables": [
   [
    [
