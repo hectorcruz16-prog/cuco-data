@@ -274,47 +274,6 @@ def bbref_adv(season_end):
     return url, out
 
 
-# ------------------------------------------------------------------ NBA.com: últimos 15 juegos
-NBA_H = {"User-Agent": UA["User-Agent"], "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9",
-         "Referer": "https://www.nba.com/", "Origin": "https://www.nba.com", "x-nba-stats-origin": "stats", "x-nba-stats-token": "true"}
-
-
-def nba_dash(season, stype, measure, last_n=15):
-    params = {"College": "", "Conference": "", "Country": "", "DateFrom": "", "DateTo": "", "Division": "", "DraftPick": "",
-              "DraftYear": "", "GameScope": "", "GameSegment": "", "Height": "", "ISTRound": "", "LastNGames": str(last_n), "LeagueID": "00",
-              "Location": "", "MeasureType": measure, "Month": "0", "OpponentTeamID": "0", "Outcome": "", "PORound": "0",
-              "PaceAdjust": "N", "PerMode": "PerGame", "Period": "0", "PlayerExperience": "", "PlayerPosition": "", "PlusMinus": "N",
-              "Rank": "N", "Season": season, "SeasonSegment": "", "SeasonType": stype, "ShotClockRange": "", "StarterBench": "",
-              "TeamID": "0", "TwoWay": "0", "VsConference": "", "VsDivision": "", "Weight": ""}
-    r = requests.get("https://stats.nba.com/stats/leaguedashplayerstats", params=params, headers=NBA_H, timeout=45)
-    r.raise_for_status()
-    rs = r.json()["resultSets"][0]
-    return [dict(zip(rs["headers"], row)) for row in rs["rowSet"]]
-
-
-def nba_last15():
-    season = f"{SEASON_END - 1}-{str(SEASON_END)[2:]}"
-    stype = "Regular Season"
-    base = nba_dash(season, stype, "Base")
-    if len(base) < 50:  # todavía no empieza la temporada regular: pretemporada
-        stype = "Pre Season"
-        base = nba_dash(season, stype, "Base")
-    time.sleep(2)
-    try:
-        adv = {a["PLAYER_ID"]: a for a in nba_dash(season, stype, "Advanced")}
-    except Exception as e:
-        log(f"  avanzadas NBA.com fallaron: {e}")
-        adv = {}
-    out = {}
-    for b in base:
-        a = adv.get(b["PLAYER_ID"], {})
-        row = {"team": b.get("TEAM_ABBREVIATION"), "gp": b.get("GP"), "min": b.get("MIN"), "pts": b.get("PTS"), "reb": b.get("REB"),
-               "ast": b.get("AST"), "stl": b.get("STL"), "blk": b.get("BLK"), "tpm": b.get("FG3M"), "to": b.get("TOV"),
-               "fgp": b.get("FG_PCT"), "ftp": b.get("FT_PCT"), "usg": a.get("USG_PCT")}
-        out[b["PLAYER_NAME"]] = {k: (round(v, 3) if isinstance(v, float) else v) for k, v in row.items() if v is not None}
-    return season + " " + stype, out
-
-
 # ------------------------------------------------------------------ Depth charts
 def probe(url, **kw):
     try:
@@ -336,22 +295,107 @@ def shape(o, d=0):
     return o if not isinstance(o, str) else o[:40]
 
 
-def depth_probe():
-    r = probe("https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/7/depthcharts")
-    if r is not None and r.ok:
-        j = r.json()
-        DBG["depth_shape"] = shape({k: v for k, v in j.items() if k != "team"})
-    r = probe("https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json")
-    if r is not None and r.ok:
-        j = r.json()
-        gd = j["leagueSchedule"]["gameDates"]
-        DBG["sched_shape"] = shape(gd[0])
-        done = [g for d in gd for g in d["games"] if g.get("gameStatus") == 3]
-        DBG["sched_done"] = len(done)
-        if done:
-            b = probe(f"https://cdn.nba.com/static/json/liveData/boxscore/boxscore_{done[-1]['gameId']}.json")
-            if b is not None and b.ok:
-                DBG["box_shape"] = shape(b.json()["game"]["homeTeam"])
+def espn_depth():
+    """Depth chart de ESPN por equipo: puesto 1 = titular en esa posición."""
+    out = {}
+    for tid in range(1, 31):
+        try:
+            r = requests.get(f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/{tid}/depthcharts", headers=UA, timeout=30)
+            r.raise_for_status()
+            j = r.json()
+            ab = (j.get("team") or {}).get("abbreviation", "")
+            for dc in j.get("depthchart") or []:
+                for pos, blk in (dc.get("positions") or {}).items():
+                    for i, a in enumerate(blk.get("athletes") or []):
+                        n = a.get("displayName") or a.get("fullName")
+                        if not n:
+                            continue
+                        cur = out.get(n)
+                        if not cur or i + 1 < cur["rank"]:
+                            out[n] = {"team": ab, "pos": pos.upper(), "rank": i + 1}
+        except Exception as e:
+            log(f"  depth equipo {tid}: {e}")
+        time.sleep(0.3)
+    return out
+
+
+ESPN_SB = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
+
+
+def espn_games(prev_games):
+    """Box scores de ESPN de los últimos ~40 días (los juegos ya leídos se guardan y no se vuelven a pedir)."""
+    from datetime import timedelta
+    games = {g: v for g, v in (prev_games or {}).items() if v.get("d", "") >= (NOW - timedelta(days=60)).strftime("%Y%m%d")}
+    new = 0
+    for back in range(0, 40):
+        day = (NOW - timedelta(days=back)).strftime("%Y%m%d")
+        try:
+            sb = requests.get(f"{ESPN_SB}/scoreboard", params={"dates": day}, headers=UA, timeout=30).json()
+        except Exception as e:
+            log(f"  scoreboard {day}: {e}")
+            continue
+        for ev in sb.get("events") or []:
+            gid = str(ev.get("id"))
+            st = ((ev.get("status") or {}).get("type") or {})
+            if gid in games or not st.get("completed"):
+                continue
+            stype = ((ev.get("season") or {}).get("type"))
+            try:
+                sm = requests.get(f"{ESPN_SB}/summary", params={"event": gid}, headers=UA, timeout=30).json()
+            except Exception as e:
+                log(f"  summary {gid}: {e}")
+                continue
+            rows = []
+            for tb in (sm.get("boxscore") or {}).get("players") or []:
+                ab = (tb.get("team") or {}).get("abbreviation", "")
+                for stt in tb.get("statistics") or []:
+                    keys = [k.upper() for k in (stt.get("labels") or stt.get("names") or [])]
+                    for a in stt.get("athletes") or []:
+                        if a.get("didNotPlay") or not a.get("stats"):
+                            continue
+                        v = dict(zip(keys, a["stats"]))
+                        def sp(x):
+                            try:
+                                m, t = str(x).split("-")
+                                return int(m), int(t)
+                            except Exception:
+                                return 0, 0
+                        fgm, fga = sp(v.get("FG"))
+                        tpm, _ = sp(v.get("3PT"))
+                        ftm, fta = sp(v.get("FT"))
+                        rows.append([(a.get("athlete") or {}).get("displayName", ""), ab, 1 if a.get("starter") else 0,
+                                     int(num(v.get("MIN")) or 0), int(num(v.get("PTS")) or 0), int(num(v.get("REB")) or 0),
+                                     int(num(v.get("AST")) or 0), int(num(v.get("STL")) or 0), int(num(v.get("BLK")) or 0),
+                                     tpm, int(num(v.get("TO")) or 0), fgm, fga, ftm, fta])
+            if rows:
+                games[gid] = {"d": day, "t": stype, "p": rows}
+                new += 1
+            time.sleep(0.25)
+        time.sleep(0.2)
+    log(f"  juegos guardados {len(games)} (nuevos {new})")
+    return games
+
+
+def last15(games):
+    """Promedio de los últimos 15 juegos de cada jugador (temporada regular si ya hay; si no, pretemporada)."""
+    reg = [g for g in games.values() if g.get("t") == 2]
+    use, label = (reg, "temporada regular") if len(reg) >= 30 else ([g for g in games.values() if g.get("t") in (1, 2)], "pretemporada")
+    by = {}
+    for g in sorted(use, key=lambda x: x["d"], reverse=True):
+        for r in g["p"]:
+            lst = by.setdefault(r[0], [])
+            if len(lst) < 15:
+                lst.append(r)
+    out = {}
+    for n, rs in by.items():
+        k = len(rs)
+        S = lambda i: sum(x[i] for x in rs)
+        fga, fta = S(12), S(14)
+        out[n] = {"team": rs[0][1], "gp": k, "gs": S(2), "min": round(S(3) / k, 1), "pts": round(S(4) / k, 1), "reb": round(S(5) / k, 1),
+                  "ast": round(S(6) / k, 1), "stl": round(S(7) / k, 1), "blk": round(S(8) / k, 1), "tpm": round(S(9) / k, 1),
+                  "to": round(S(10) / k, 1), "fgp": round(S(11) / fga, 3) if fga else None, "ftp": round(S(13) / fta, 3) if fta else None}
+        out[n] = {a: b for a, b in out[n].items() if b is not None}
+    return label, out
 
 
 # ------------------------------------------------------------------ main
@@ -469,15 +513,19 @@ def main():
             res["adv"] = prev["adv"]
             res["sources"]["adv"] = {**prev.get("sources", {}).get("adv", {}), "fresh": False, "error": str(e)[:160]}
 
-    # NBA.com últimos 15 juegos (minutos y uso: quién está subiendo de rol)
+    # últimos 15 juegos (box scores de ESPN; NBA.com bloquea a GitHub)
     try:
-        log("[l15] NBA.com")
-        label, d = nba_last15()
-        if len(d) < 50:
+        log("[l15] ESPN box scores")
+        gpath = os.path.join(os.path.dirname(OUT), "games.json")
+        pg = json.load(open(gpath)) if os.path.exists(gpath) else {}
+        games = espn_games(pg)
+        json.dump(games, open(gpath, "w"), separators=(",", ":"))
+        label, d = last15(games)
+        if len(d) < 30:
             raise RuntimeError(f"pocos jugadores ({len(d)})")
         res["l15"] = d
-        res["sources"]["l15"] = {"name": f"NBA.com · últimos 15 juegos ({label})", "url": "https://www.nba.com/stats/players/traditional?LastNGames=15",
-                                 "ok": True, "at": at, "count": len(d), "fresh": True, "kind": "stats", "pre": "Pre" in label}
+        res["sources"]["l15"] = {"name": f"ESPN · últimos 15 juegos ({label})", "url": "https://www.espn.com/nba/scoreboard",
+                                 "ok": True, "at": at, "count": len(d), "fresh": True, "kind": "stats", "pre": label == "pretemporada"}
         log(f"  ok: {label} {len(d)} · ej: {next(iter(d.items()))}")
     except Exception as e:
         log(f"  FALLÓ: {e}")
@@ -485,12 +533,21 @@ def main():
             res["l15"] = prev["l15"]
             res["sources"]["l15"] = {**prev.get("sources", {}).get("l15", {}), "fresh": False, "error": str(e)[:160]}
 
-    # depth charts
+    # depth charts de ESPN
     try:
-        log("[depth] probando fuentes")
-        depth_probe()
+        log("[depth] ESPN")
+        d = espn_depth()
+        if len(d) < 150:
+            raise RuntimeError(f"pocos jugadores ({len(d)})")
+        res["depth"] = d
+        res["sources"]["depth"] = {"name": "ESPN · depth charts (titulares)", "url": "https://www.espn.com/nba/depth",
+                                   "ok": True, "at": at, "count": len(d), "fresh": True, "kind": "stats"}
+        log(f"  ok: {len(d)} · titulares: {sum(1 for v in d.values() if v['rank'] == 1)} · ej: {list(d.items())[:3]}")
     except Exception as e:
         log(f"  FALLÓ: {e}")
+        if prev.get("depth"):
+            res["depth"] = prev["depth"]
+            res["sources"]["depth"] = {**prev.get("sources", {}).get("depth", {}), "fresh": False, "error": str(e)[:160]}
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
