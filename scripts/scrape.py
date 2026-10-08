@@ -34,8 +34,12 @@ def nm(s):
     return re.sub(r"\s+", " ", s).strip()
 
 
+DBG = {}
+
+
 def log(*a):
     print(*a, flush=True)
+    DBG.setdefault("log", []).append(" ".join(str(x) for x in a)[:400])
 
 
 def get(url, **kw):
@@ -56,7 +60,7 @@ def valid_list(lst):
 
 def num(x):
     x = str(x).strip().replace(",", "")
-    m = re.match(r"^-?\d+(\.\d+)?", x)
+    m = re.match(r"^-?(\d+(\.\d+)?|\.\d+)", x)
     return float(m.group(0)) if m else None
 
 
@@ -125,6 +129,7 @@ def parse_table(html, need=("PLAYER",)):
                 rows.append(dict(zip(heads, cells)))
         if len(rows) > len(best):
             best = rows
+            DBG.setdefault("tables", []).append({"heads": heads, "n": len(rows), "sample": rows[:3]})
     return best
 
 
@@ -205,7 +210,9 @@ def fp_adp():
 # ------------------------------------------------------------------ Basketball-Reference (temporada real)
 def bbref(season_end):
     url = f"https://www.basketball-reference.com/leagues/NBA_{season_end}_per_game.html"
-    html = get(url).text
+    r = get(url)
+    r.encoding = "utf-8"
+    html = r.text
     soup = BeautifulSoup(html, "lxml")
     t = soup.find("table", id="per_game_stats")
     if not t:
@@ -261,6 +268,7 @@ def main():
         try:
             log(f"[{k}] {name}")
             url, lst, proj = fn()
+            log(f"  leídos {len(lst or [])}: {(lst or [])[:6]}")
             err = valid_list(lst)
             if err:
                 raise RuntimeError(err)
@@ -306,6 +314,8 @@ def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
         json.dump(res, f, ensure_ascii=False, separators=(",", ":"))
+    with open(os.path.join(os.path.dirname(OUT), "debug.json"), "w") as f:
+        json.dump(DBG, f, ensure_ascii=False, indent=1)
     oks = [k for k, s in res["sources"].items() if s.get("fresh")]
     log(f"\nlisto: {len(oks)} fuentes frescas: {oks}")
     if not oks and not prev:
