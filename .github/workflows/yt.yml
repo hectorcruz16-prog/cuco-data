@@ -17,6 +17,15 @@ jobs:
       - uses: actions/checkout@v4
       - run: pip install requests==2.32.3
       - run: python scripts/yt.py
+      - name: Despertar la app (avisos push, alineación, lesiones) — solo si existe el secreto CRON_KEY
+        env:
+          CRON_KEY: ${{ secrets.CRON_KEY }}
+        run: |
+          if [ -n "$CRON_KEY" ]; then
+            curl -s --max-time 50 "https://cucosdraft.pages.dev/api/cron?k=$CRON_KEY" | head -c 400; echo
+          else
+            echo "sin CRON_KEY: no se llama al cron"
+          fi
       - name: Guardar si hay videos nuevos
         run: |
           git config user.name "cuco-robot"
