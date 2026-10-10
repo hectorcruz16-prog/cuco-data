@@ -21,10 +21,10 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 24 (nuevos 1)",
+  "  juegos guardados 24 (nuevos 0)",
   "  ok: pretemporada 501 · ej: ('Kevin Durant', {'team': 'HOU', 'gp': 1, 'gs': 1, 'min': 23.0, 'pts': 15.0, 'reb': 0.0, 'ast': 2.0, 'stl': 0.0, 'blk': 1.0, 'tpm': 1.0, 'to': 1.0, 'fgp': 0.583, 'ftp': 0.0})",
   "[depth] ESPN",
-  "  ok: 528 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 527 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
