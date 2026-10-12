@@ -12,8 +12,8 @@
   "  leídos 307: [['Victor Wembanyama', 1], ['Nikola Jokic', 2], ['Luka Doncic', 3], ['Shai Gilgeous-Alexander', 4], ['Cade Cunningham', 5], ['Anthony Edwards', 6]]",
   "  ok: 307 jugadores · top: [['Victor Wembanyama', 1], ['Nikola Jokic', 2], ['Luka Doncic', 3]]",
   "[fpa] FantasyPros · ADP (ESPN/Yahoo/CBS)",
-  "  leídos 223: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Luka Doncic', 4], ['Cade Cunningham', 5], ['Giannis Antetokounmpo', 6]]",
-  "  ok: 223 jugadores · top: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3]]",
+  "  leídos 227: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3], ['Shai Gilgeous-Alexander', 4], ['Giannis Antetokounmpo', 5], ['Cade Cunningham', 6]]",
+  "  ok: 227 jugadores · top: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3]]",
   "[bbref] 2026",
   "  ok: 583 jugadores",
   "[bbref] 2027",
@@ -21,10 +21,10 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 35 (nuevos 2)",
-  "  ok: pretemporada 533 · ej: ('Daniel Gafford', {'team': 'DAL', 'gp': 2, 'gs': 1, 'min': 11.5, 'pts': 8.0, 'reb': 3.5, 'ast': 0.0, 'stl': 0.5, 'blk': 0.0, 'tpm': 0.5, 'to': 1.0, 'fgp': 0.857, 'ftp': 1.0})",
+  "  juegos guardados 36 (nuevos 1)",
+  "  ok: pretemporada 536 · ej: ('Daniel Gafford', {'team': 'DAL', 'gp': 2, 'gs': 1, 'min': 11.5, 'pts': 8.0, 'reb': 3.5, 'ast': 0.0, 'stl': 0.5, 'blk': 0.0, 'tpm': 0.5, 'to': 1.0, 'fgp': 0.857, 'ftp': 1.0})",
   "[depth] ESPN",
-  "  ok: 528 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 529 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
@@ -1077,7 +1077,7 @@
     "Yahoo",
     "ESPN",
     "AVG",
-    224
+    228
    ],
    [
     "",
@@ -1191,7 +1191,7 @@
     {
      "R#": "1",
      "PLAYER": "Nikola Jokic N.Jokic",
-     "ADP": "1.5",
+     "ADP": "1.4",
      "POS": "C",
      "TEAM": "DEN",
      "GP": "72",
@@ -1210,7 +1210,7 @@
     {
      "R#": "2",
      "PLAYER": "Victor Wembanyama V.Wembanyama",
-     "ADP": "3.1",
+     "ADP": "3.0",
      "POS": "C",
      "TEAM": "SA",
      "GP": "66",
@@ -1229,7 +1229,7 @@
     {
      "R#": "3",
      "PLAYER": "Shai Gilgeous-Alexander S.Gilgeous-Alexander",
-     "ADP": "3.0",
+     "ADP": "3.1",
      "POS": "PG",
      "TEAM": "OKC",
      "GP": "71",
@@ -1255,14 +1255,14 @@
     "ESPN",
     "AVG"
    ],
-   "n": 223,
+   "n": 227,
    "sample": [
     {
      "RANK": "1",
      "PLAYER": "Nikola Jokic (DEN - C)",
      "YAHOO": "2",
      "ESPN": "1",
-     "AVG": "1.5"
+     "AVG": "1.0"
     },
     {
      "RANK": "2",
@@ -1273,10 +1273,10 @@
     },
     {
      "RANK": "3",
-     "PLAYER": "Shai Gilgeous-Alexander (OKC - PG)",
-     "YAHOO": "4",
-     "ESPN": "2",
-     "AVG": "3.0"
+     "PLAYER": "Luka Doncic (LAL - PG,SG)",
+     "YAHOO": "3",
+     "ESPN": "4",
+     "AVG": "3.5"
     }
    ]
   }
