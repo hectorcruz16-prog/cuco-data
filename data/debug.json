@@ -21,8 +21,8 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 33 (nuevos 8)",
-  "  ok: pretemporada 529 · ej: ('Daniel Gafford', {'team': 'DAL', 'gp': 2, 'gs': 1, 'min': 11.5, 'pts': 8.0, 'reb': 3.5, 'ast': 0.0, 'stl': 0.5, 'blk': 0.0, 'tpm': 0.5, 'to': 1.0, 'fgp': 0.857, 'ftp': 1.0})",
+  "  juegos guardados 35 (nuevos 2)",
+  "  ok: pretemporada 533 · ej: ('Daniel Gafford', {'team': 'DAL', 'gp': 2, 'gs': 1, 'min': 11.5, 'pts': 8.0, 'reb': 3.5, 'ast': 0.0, 'stl': 0.5, 'blk': 0.0, 'tpm': 0.5, 'to': 1.0, 'fgp': 0.857, 'ftp': 1.0})",
   "[depth] ESPN",
   "  ok: 528 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
