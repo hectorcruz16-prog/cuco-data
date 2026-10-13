@@ -9,8 +9,8 @@
   "  leídos 30: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Luka Doncic', 4], ['Giannis Antetokounmpo', 5], ['Cade Cunningham', 6]]",
   "  ok: 30 proyecciones · ej: ('Nikola Jokic', {'pts': 28.4, 'reb': 12.7, 'ast': 10.4, 'stl': 1.6, 'blk': 0.7, 'tpm': 1.8, 'to': 3.5, 'fgp': 0.573, 'ftp': 0.816, 'min': 35.1, 'gp': 72.0})",
   "[fp] FantasyPros",
-  "  leídos 307: [['Victor Wembanyama', 1], ['Nikola Jokic', 2], ['Luka Doncic', 3], ['Shai Gilgeous-Alexander', 4], ['Cade Cunningham', 5], ['Anthony Edwards', 6]]",
-  "  ok: 307 jugadores · top: [['Victor Wembanyama', 1], ['Nikola Jokic', 2], ['Luka Doncic', 3]]",
+  "  leídos 542: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3], ['Shai Gilgeous-Alexander', 4], ['Cade Cunningham', 5], ['Anthony Edwards', 6]]",
+  "  ok: 542 jugadores · top: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3]]",
   "[fpa] FantasyPros · ADP (ESPN/Yahoo/CBS)",
   "  leídos 227: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3], ['Shai Gilgeous-Alexander', 4], ['Giannis Antetokounmpo', 5], ['Cade Cunningham', 6]]",
   "  ok: 227 jugadores · top: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3]]",
@@ -21,10 +21,10 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 36 (nuevos 1)",
-  "  ok: pretemporada 536 · ej: ('Daniel Gafford', {'team': 'DAL', 'gp': 2, 'gs': 1, 'min': 11.5, 'pts': 8.0, 'reb': 3.5, 'ast': 0.0, 'stl': 0.5, 'blk': 0.0, 'tpm': 0.5, 'to': 1.0, 'fgp': 0.857, 'ftp': 1.0})",
+  "  juegos guardados 40 (nuevos 4)",
+  "  ok: pretemporada 550 · ej: ('Maxwell Lewis', {'team': 'LON', 'gp': 1, 'gs': 1, 'min': 22.0, 'pts': 13.0, 'reb': 5.0, 'ast': 0.0, 'stl': 4.0, 'blk': 1.0, 'tpm': 2.0, 'to': 4.0, 'fgp': 0.5, 'ftp': 0.75})",
   "[depth] ESPN",
-  "  ok: 529 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 527 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
@@ -953,7 +953,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "3.9128120000"
+     "3.9096101000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -963,7 +963,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "0.9828029000"
+     "0.9835173000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -973,7 +973,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.2157428442"
+     "0.2161335923"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -983,7 +983,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.2202601051"
+     "2.2239366648"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -993,7 +993,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "3.1044771987"
+     "3.0919265787"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1003,7 +1003,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "3.8827385734"
+     "3.8799822049"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1013,7 +1013,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.7188664326"
+     "1.7192903214"
     ]
    ],
    "postbacks": [
@@ -1205,7 +1205,7 @@
      "STL": "1.6",
      "BLK": "0.7",
      "TO": "3.5",
-     "TOTAL": "15.89"
+     "TOTAL": "15.88"
     },
     {
      "R#": "2",
@@ -1224,7 +1224,7 @@
      "STL": "1.1",
      "BLK": "3.2",
      "TO": "2.9",
-     "TOTAL": "14.22"
+     "TOTAL": "14.21"
     },
     {
      "R#": "3",
@@ -1260,15 +1260,15 @@
     {
      "RANK": "1",
      "PLAYER": "Nikola Jokic (DEN - C)",
-     "YAHOO": "2",
+     "YAHOO": "1",
      "ESPN": "1",
      "AVG": "1.0"
     },
     {
      "RANK": "2",
      "PLAYER": "Victor Wembanyama (SAS - C)",
-     "YAHOO": "1",
-     "ESPN": "3",
+     "YAHOO": "2",
+     "ESPN": "2",
      "AVG": "2.0"
     },
     {
