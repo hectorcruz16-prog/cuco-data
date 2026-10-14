@@ -21,7 +21,7 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 41 (nuevos 1)",
+  "  juegos guardados 41 (nuevos 0)",
   "  ok: pretemporada 552 · ej: ('Maxwell Lewis', {'team': 'LON', 'gp': 1, 'gs': 1, 'min': 22.0, 'pts': 13.0, 'reb': 5.0, 'ast': 0.0, 'stl': 4.0, 'blk': 1.0, 'tpm': 2.0, 'to': 4.0, 'fgp': 0.5, 'ftp': 0.75})",
   "[depth] ESPN",
   "  ok: 527 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
