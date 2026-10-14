@@ -21,8 +21,8 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 41 (nuevos 0)",
-  "  ok: pretemporada 552 · ej: ('Maxwell Lewis', {'team': 'LON', 'gp': 1, 'gs': 1, 'min': 22.0, 'pts': 13.0, 'reb': 5.0, 'ast': 0.0, 'stl': 4.0, 'blk': 1.0, 'tpm': 2.0, 'to': 4.0, 'fgp': 0.5, 'ftp': 0.75})",
+  "  juegos guardados 46 (nuevos 5)",
+  "  ok: pretemporada 563 · ej: ('Jarrett Allen', {'team': 'CLE', 'gp': 3, 'gs': 3, 'min': 22.3, 'pts': 7.3, 'reb': 5.7, 'ast': 0.3, 'stl': 1.0, 'blk': 1.0, 'tpm': 0.3, 'to': 0.3, 'fgp': 0.474, 'ftp': 0.5})",
   "[depth] ESPN",
   "  ok: 527 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
@@ -954,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "3.9096101000"
+     "3.9086288000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -964,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "0.9835173000"
+     "0.9813206000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -974,7 +974,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.2161335923"
+     "0.2160469481"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -984,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.2239366648"
+     "2.2220486585"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -994,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "3.0919265787"
+     "3.0872602751"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1004,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "3.8799822049"
+     "3.8792489888"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1014,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.7192903214"
+     "1.7201901190"
     ]
    ],
    "postbacks": [
@@ -1206,12 +1206,12 @@
      "STL": "1.6",
      "BLK": "0.7",
      "TO": "3.5",
-     "TOTAL": "15.88"
+     "TOTAL": "15.87"
     },
     {
      "R#": "2",
      "PLAYER": "Victor Wembanyama V.Wembanyama",
-     "ADP": "3.0",
+     "ADP": "3.1",
      "POS": "C",
      "TEAM": "SA",
      "GP": "66",
@@ -1225,12 +1225,12 @@
      "STL": "1.1",
      "BLK": "3.2",
      "TO": "2.9",
-     "TOTAL": "14.21"
+     "TOTAL": "14.20"
     },
     {
      "R#": "3",
      "PLAYER": "Shai Gilgeous-Alexander S.Gilgeous-Alexander",
-     "ADP": "3.1",
+     "ADP": "3.0",
      "POS": "PG",
      "TEAM": "OKC",
      "GP": "71",
@@ -1244,7 +1244,7 @@
      "STL": "1.6",
      "BLK": "0.9",
      "TO": "2.3",
-     "TOTAL": "14.07"
+     "TOTAL": "14.06"
     }
    ]
   },
