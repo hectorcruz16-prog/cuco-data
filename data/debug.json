@@ -21,8 +21,8 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 53 (nuevos 0)",
-  "  ok: pretemporada 578 · ej: ('Julius Randle', {'team': 'BKN', 'gp': 4, 'gs': 4, 'min': 22.8, 'pts': 14.0, 'reb': 4.2, 'ast': 4.8, 'stl': 1.2, 'blk': 0.0, 'tpm': 1.0, 'to': 1.8, 'fgp': 0.436, 'ftp': 0.783})",
+  "  juegos guardados 55 (nuevos 2)",
+  "  ok: pretemporada 581 · ej: ('Kawhi Leonard', {'team': 'TOR', 'gp': 2, 'gs': 2, 'min': 20.0, 'pts': 13.5, 'reb': 3.0, 'ast': 0.5, 'stl': 2.0, 'blk': 0.5, 'tpm': 2.0, 'to': 0.5, 'fgp': 0.471, 'ftp': 0.778})",
   "[depth] ESPN",
   "  ok: 526 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
@@ -954,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "3.9086288000"
+     "3.9083069000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -964,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "0.9813206000"
+     "0.9795715000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -974,7 +974,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.2160469481"
+     "0.2160832201"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -984,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.2220486585"
+     "2.2235638699"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -994,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "3.0872602751"
+     "3.0893593851"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1004,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "3.8792489888"
+     "3.8802428523"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1014,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.7201901190"
+     "1.7204537082"
     ]
    ],
    "postbacks": [
@@ -1225,7 +1225,7 @@
      "STL": "1.1",
      "BLK": "3.2",
      "TO": "2.9",
-     "TOTAL": "14.20"
+     "TOTAL": "14.22"
     },
     {
      "R#": "3",
@@ -1244,7 +1244,7 @@
      "STL": "1.6",
      "BLK": "0.9",
      "TO": "2.3",
-     "TOTAL": "14.06"
+     "TOTAL": "14.05"
     }
    ]
   },
