@@ -954,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "3.9071719000"
+     "3.9053726000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -964,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "0.9795754000"
+     "0.9791024000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -974,7 +974,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.2161070681"
+     "0.2160593518"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -984,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.2245612095"
+     "2.2243400203"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -994,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "3.0918995777"
+     "3.0815264490"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1004,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "3.8810946642"
+     "3.8934147833"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1014,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.7209125575"
+     "1.7214517707"
     ]
    ],
    "postbacks": [
@@ -1211,7 +1211,7 @@
     {
      "R#": "2",
      "PLAYER": "Victor Wembanyama V.Wembanyama",
-     "ADP": "3.1",
+     "ADP": "3.0",
      "POS": "C",
      "TEAM": "SA",
      "GP": "66",
@@ -1225,7 +1225,7 @@
      "STL": "1.1",
      "BLK": "3.2",
      "TO": "2.9",
-     "TOTAL": "14.22"
+     "TOTAL": "14.21"
     },
     {
      "R#": "3",
@@ -1244,7 +1244,7 @@
      "STL": "1.6",
      "BLK": "0.9",
      "TO": "2.3",
-     "TOTAL": "14.05"
+     "TOTAL": "14.04"
     }
    ]
   },
