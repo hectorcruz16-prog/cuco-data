@@ -9,8 +9,8 @@
   "  leídos 30: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Luka Doncic', 4], ['Giannis Antetokounmpo', 5], ['Cade Cunningham', 6]]",
   "  ok: 30 proyecciones · ej: ('Nikola Jokic', {'pts': 28.4, 'reb': 12.7, 'ast': 10.4, 'stl': 1.6, 'blk': 0.7, 'tpm': 1.8, 'to': 3.5, 'fgp': 0.573, 'ftp': 0.816, 'min': 35.1, 'gp': 72.0})",
   "[fp] FantasyPros",
-  "  leídos 542: [['Victor Wembanyama', 1], ['Nikola Jokic', 2], ['Luka Doncic', 3], ['Shai Gilgeous-Alexander', 4], ['Cade Cunningham', 5], ['Anthony Edwards', 6]]",
-  "  ok: 542 jugadores · top: [['Victor Wembanyama', 1], ['Nikola Jokic', 2], ['Luka Doncic', 3]]",
+  "  leídos 540: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3], ['Shai Gilgeous-Alexander', 4], ['Cade Cunningham', 5], ['Tyrese Maxey', 6]]",
+  "  ok: 540 jugadores · top: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3]]",
   "[fpa] FantasyPros · ADP (ESPN/Yahoo/CBS)",
   "  leídos 227: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3], ['Shai Gilgeous-Alexander', 4], ['Giannis Antetokounmpo', 5], ['Cade Cunningham', 6]]",
   "  ok: 227 jugadores · top: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3]]",
@@ -21,10 +21,10 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 67 (nuevos 12)",
+  "  juegos guardados 67 (nuevos 0)",
   "  ok: pretemporada 590 · ej: ('Andrew Wiggins', {'team': 'MIA', 'gp': 4, 'gs': 4, 'min': 16.2, 'pts': 14.2, 'reb': 2.8, 'ast': 0.5, 'stl': 1.2, 'blk': 0.2, 'tpm': 1.8, 'to': 0.5, 'fgp': 0.606, 'ftp': 0.769})",
   "[depth] ESPN",
-  "  ok: 526 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 521 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
