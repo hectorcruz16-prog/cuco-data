@@ -9,7 +9,7 @@
   "  leídos 30: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Luka Doncic', 4], ['Giannis Antetokounmpo', 5], ['Cade Cunningham', 6]]",
   "  ok: 30 proyecciones · ej: ('Nikola Jokic', {'pts': 28.4, 'reb': 12.7, 'ast': 10.4, 'stl': 1.6, 'blk': 0.7, 'tpm': 1.8, 'to': 3.5, 'fgp': 0.573, 'ftp': 0.816, 'min': 35.1, 'gp': 72.0})",
   "[fp] FantasyPros",
-  "  leídos 540: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3], ['Shai Gilgeous-Alexander', 4], ['Cade Cunningham', 5], ['Tyrese Maxey', 6]]",
+  "  leídos 540: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3], ['Shai Gilgeous-Alexander', 4], ['Cade Cunningham', 5], ['Jayson Tatum', 6]]",
   "  ok: 540 jugadores · top: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3]]",
   "[fpa] FantasyPros · ADP (ESPN/Yahoo/CBS)",
   "  leídos 227: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3], ['Shai Gilgeous-Alexander', 4], ['Giannis Antetokounmpo', 5], ['Cade Cunningham', 6]]",
