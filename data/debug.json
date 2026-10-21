@@ -2,8 +2,8 @@
  "log": [
   "[hh] Hashtag Basketball (ranking 9-cat temporada pasada)",
   "  selector ctl00$ContentPlaceHolder1$DDSHOW: ['30', '50', '100', '200', '300', '400', '900'] -> 900",
-  "  leídos 583: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Tyrese Maxey', 4], ['Luka Doncic', 5], ['Kawhi Leonard', 6]]",
-  "  ok: 583 jugadores · top: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3]]",
+  "  leídos 68: [['Paul George', 1], ['Shai Gilgeous-Alexander', 2], ['Tyrese Maxey', 3], ['Victor Wembanyama', 4], ['Cade Cunningham', 5], ['Joel Embiid', 6]]",
+  "  FALLÓ: pocos jugadores (68)",
   "[hhp] Hashtag · proyecciones 2026-27 (top 30 gratis)",
   "  no encontré selector de cantidad; uso la página tal cual",
   "  leídos 30: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Luka Doncic', 4], ['Giannis Antetokounmpo', 5], ['Cade Cunningham', 6]]",
@@ -17,12 +17,12 @@
   "[bbref] 2026",
   "  ok: 583 jugadores",
   "[bbref] 2027",
-  "  FALLÓ: no encontré la tabla per_game_stats",
+  "  ok: 69 jugadores",
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 68 (nuevos 1)",
-  "  ok: pretemporada 590 · ej: ('Paul George', {'team': 'BOS', 'gp': 3, 'gs': 3, 'min': 26.7, 'pts': 18.7, 'reb': 5.3, 'ast': 3.7, 'stl': 4.0, 'blk': 0.0, 'tpm': 3.3, 'to': 2.3, 'fgp': 0.415, 'ftp': 0.857})",
+  "  juegos guardados 70 (nuevos 2)",
+  "  ok: pretemporada 594 · ej: ('Paul George', {'team': 'BOS', 'gp': 3, 'gs': 3, 'min': 26.7, 'pts': 18.7, 'reb': 5.3, 'ast': 3.7, 'stl': 4.0, 'blk': 0.0, 'tpm': 3.3, 'to': 2.3, 'fgp': 0.415, 'ftp': 0.857})",
   "[depth] ESPN",
   "  ok: 516 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
@@ -116,11 +116,11 @@
     },
     "ctl00$ContentPlaceHolder1$DDDURATION": {
      "opts": [
-      "0=2025-26 Rest of Season Ranki",
-      "1=2025-26 NBA Regular Season (",
-      "7=Last 7 days of the 2025-26 N",
-      "14=Last 14 days of the 2025-26",
-      "30=Last 30 days of the 2025-26",
+      "1=2026-27 NBA Regular Season (",
+      "7=Last 7 days of the 2026-27 N",
+      "14=Last 14 days of the 2026-27",
+      "30=Last 30 days of the 2026-27",
+      "2026=2025-26 NBA Regular Seaso",
       "2025=2024-25 NBA Regular Seaso",
       "2024=2023-24 NBA Regular Seaso",
       "2023=2022-23 NBA Regular Seaso",
@@ -453,72 +453,72 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFfgpzz",
      "hidden",
-     "elite"
+     "vgood"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "3.5453845000"
+     "2.3228096000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
      "hidden",
-     "vgood"
+     "good"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "1.7214040000"
+     "1.0232213000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
      "hidden",
-     ""
+     "elite"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.0229347403"
+     "4.3621828960"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
      "hidden",
-     "vgood"
+     "elite"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.1849637105"
+     "4.5092406140"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
      "hidden",
-     "elite"
+     "vgood"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "3.3199149961"
+     "1.5258114981"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
      "hidden",
-     "elite"
+     "good"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "4.1838093345"
+     "1.2688907115"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
      "hidden",
-     "good"
+     "elite"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.1903463834"
+     "5.5075302524"
     ]
    ],
    "postbacks": [
@@ -1046,7 +1046,7 @@
     "BLK",
     "TO",
     "TOTAL",
-    628
+    74
    ]
   ],
   [
@@ -1109,61 +1109,61 @@
     "TO",
     "TOTAL"
    ],
-   "n": 583,
+   "n": 68,
    "sample": [
     {
      "R#": "1",
-     "PLAYER": "Nikola Jokic N.Jokic",
-     "POS": "C",
-     "TEAM": "DEN",
-     "GP": "65",
-     "MPG": "34.9",
-     "FG%": "0.569 (9.9/17.4)",
-     "FT%": "0.831 (6.1/7.4)",
-     "3PM": "1.7",
-     "PTS": "27.7",
-     "TREB": "12.9",
-     "AST": "10.7",
-     "STL": "1.4",
-     "BLK": "0.8",
-     "TO": "3.7",
-     "TOTAL": "16.28"
+     "PLAYER": "Paul George P.George",
+     "POS": "SF,PF",
+     "TEAM": "BOS",
+     "GP": "1",
+     "MPG": "30.6",
+     "FG%": "0.571 (12.0/21.0)",
+     "FT%": "0.875 (7.0/8.0)",
+     "3PM": "7.0",
+     "PTS": "38.0",
+     "TREB": "5.0",
+     "AST": "3.0",
+     "STL": "5.0",
+     "BLK": "0.0",
+     "TO": "3.0",
+     "TOTAL": "19.93"
     },
     {
      "R#": "2",
-     "PLAYER": "Victor Wembanyama V.Wembanyama",
-     "POS": "PF,C",
-     "TEAM": "SA",
-     "GP": "64",
-     "MPG": "29.2",
-     "FG%": "0.512 (8.6/16.9)",
-     "FT%": "0.827 (5.8/7.0)",
-     "3PM": "1.9",
-     "PTS": "25.0",
-     "TREB": "11.5",
-     "AST": "3.1",
-     "STL": "1.0",
-     "BLK": "3.1",
-     "TO": "2.4",
-     "TOTAL": "14.22"
-    },
-    {
-     "R#": "3",
      "PLAYER": "Shai Gilgeous-Alexander S.Gilgeous-Alexander",
      "POS": "PG",
      "TEAM": "OKC",
-     "GP": "68",
-     "MPG": "33.2",
-     "FG%": "0.553 (10.8/19.4)",
-     "FT%": "0.879 (7.9/9.0)",
-     "3PM": "1.7",
-     "PTS": "31.1",
-     "TREB": "4.3",
-     "AST": "6.6",
-     "STL": "1.4",
-     "BLK": "0.8",
-     "TO": "2.2",
-     "TOTAL": "13.45"
+     "GP": "1",
+     "MPG": "36.1",
+     "FG%": "0.481 (13.0/27.0)",
+     "FT%": "0.750 (3.0/4.0)",
+     "3PM": "3.0",
+     "PTS": "32.0",
+     "TREB": "6.0",
+     "AST": "4.0",
+     "STL": "3.0",
+     "BLK": "3.0",
+     "TO": "2.0",
+     "TOTAL": "15.60"
+    },
+    {
+     "R#": "3",
+     "PLAYER": "Tyrese Maxey T.Maxey",
+     "POS": "PG",
+     "TEAM": "PHI",
+     "GP": "1",
+     "MPG": "39.6",
+     "FG%": "0.474 (9.0/19.0)",
+     "FT%": "0.889 (8.0/9.0)",
+     "3PM": "2.0",
+     "PTS": "28.0",
+     "TREB": "4.0",
+     "AST": "5.0",
+     "STL": "3.0",
+     "BLK": "3.0",
+     "TO": "2.0",
+     "TOTAL": "15.55"
     }
    ]
   },
