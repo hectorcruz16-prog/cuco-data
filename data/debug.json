@@ -2,8 +2,8 @@
  "log": [
   "[hh] Hashtag Basketball (ranking 9-cat temporada pasada)",
   "  selector ctl00$ContentPlaceHolder1$DDSHOW: ['30', '50', '100', '200', '300', '400', '900'] -> 900",
-  "  leídos 325: [['Anthony Edwards', 1], ['Paul George', 2], ['Ty Jerome', 3], ['Luka Doncic', 4], ['Tyrese Maxey', 5], ['Shai Gilgeous-Alexander', 6]]",
-  "  ok: 325 jugadores · top: [['Anthony Edwards', 1], ['Paul George', 2], ['Ty Jerome', 3]]",
+  "  leídos 348: [['Anthony Edwards', 1], ['Paul George', 2], ['Ty Jerome', 3], ['Luka Doncic', 4], ['Paolo Banchero', 5], ['Yves Missi', 6]]",
+  "  ok: 348 jugadores · top: [['Anthony Edwards', 1], ['Paul George', 2], ['Ty Jerome', 3]]",
   "[hhp] Hashtag · proyecciones 2026-27 (top 30 gratis)",
   "  no encontré selector de cantidad; uso la página tal cual",
   "  leídos 30: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Luka Doncic', 4], ['Giannis Antetokounmpo', 5], ['Cade Cunningham', 6]]",
@@ -17,14 +17,14 @@
   "[bbref] 2026",
   "  ok: 583 jugadores",
   "[bbref] 2027",
-  "  ok: 323 jugadores",
+  "  ok: 345 jugadores",
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 81 (nuevos 0)",
-  "  ok: pretemporada 596 · ej: ('Onyeka Okongwu', {'team': 'ATL', 'gp': 5, 'gs': 5, 'min': 21.6, 'pts': 10.6, 'reb': 4.4, 'ast': 4.2, 'stl': 0.0, 'blk': 0.4, 'tpm': 1.0, 'to': 1.8, 'fgp': 0.5, 'ftp': 0.833})",
+  "  juegos guardados 83 (nuevos 2)",
+  "  ok: pretemporada 596 · ej: ('Jarrett Allen', {'team': 'CLE', 'gp': 4, 'gs': 4, 'min': 23.8, 'pts': 9.0, 'reb': 6.0, 'ast': 0.2, 'stl': 0.8, 'blk': 1.2, 'tpm': 0.2, 'to': 0.5, 'fgp': 0.517, 'ftp': 0.5})",
   "[depth] ESPN",
-  "  ok: 518 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 514 · titulares: 147 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
@@ -458,7 +458,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "1.7352796000"
+     "1.9558840000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -468,7 +468,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "0.2081188000"
+     "0.2826842000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -478,7 +478,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "6.3359481877"
+     "6.2305382329"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -488,7 +488,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "3.9696437113"
+     "4.0143336411"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -498,27 +498,27 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "2.2398241876"
+     "2.0560687292"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
      "hidden",
-     "good"
+     ""
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "0.8298145860"
+     "0.4275849657"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
      "hidden",
-     "vgood"
+     "good"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.8538552834"
+     "1.4183439975"
     ]
    ],
    "postbacks": [
@@ -954,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "3.9069118000"
+     "3.9100057000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -964,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "0.9789037000"
+     "0.9792547000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -974,7 +974,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.2159126666"
+     "0.2159079256"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -984,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.2351897638"
+     "2.2353684475"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -994,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "3.0977351156"
+     "3.1068914165"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1004,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "3.9009827985"
+     "3.9013807245"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1014,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.7232934919"
+     "1.7236420403"
     ]
    ],
    "postbacks": [
@@ -1046,7 +1046,7 @@
     "BLK",
     "TO",
     "TOTAL",
-    350
+    375
    ]
   ],
   [
@@ -1109,7 +1109,7 @@
     "TO",
     "TOTAL"
    ],
-   "n": 325,
+   "n": 348,
    "sample": [
     {
      "R#": "1",
@@ -1127,7 +1127,7 @@
      "STL": "2.0",
      "BLK": "1.0",
      "TO": "4.0",
-     "TOTAL": "17.81"
+     "TOTAL": "17.10"
     },
     {
      "R#": "2",
@@ -1145,7 +1145,7 @@
      "STL": "5.0",
      "BLK": "0.0",
      "TO": "3.0",
-     "TOTAL": "16.55"
+     "TOTAL": "15.79"
     },
     {
      "R#": "3",
@@ -1163,7 +1163,7 @@
      "STL": "0.0",
      "BLK": "1.0",
      "TO": "1.0",
-     "TOTAL": "16.44"
+     "TOTAL": "15.65"
     }
    ]
   },
@@ -1206,7 +1206,7 @@
      "STL": "1.6",
      "BLK": "0.7",
      "TO": "3.5",
-     "TOTAL": "15.91"
+     "TOTAL": "15.92"
     },
     {
      "R#": "2",
@@ -1225,7 +1225,7 @@
      "STL": "1.1",
      "BLK": "3.2",
      "TO": "2.9",
-     "TOTAL": "14.23"
+     "TOTAL": "14.25"
     },
     {
      "R#": "3",
