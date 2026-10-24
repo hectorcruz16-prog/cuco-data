@@ -2,8 +2,8 @@
  "log": [
   "[hh] Hashtag Basketball (ranking 9-cat temporada pasada)",
   "  selector ctl00$ContentPlaceHolder1$DDSHOW: ['30', '50', '100', '200', '300', '400', '900'] -> 900",
-  "  leídos 348: [['Anthony Edwards', 1], ['Paul George', 2], ['Ty Jerome', 3], ['Luka Doncic', 4], ['Paolo Banchero', 5], ['Yves Missi', 6]]",
-  "  ok: 348 jugadores · top: [['Anthony Edwards', 1], ['Paul George', 2], ['Ty Jerome', 3]]",
+  "  leídos 379: [['Domantas Sabonis', 1], ['Austin Reaves', 2], ['Walker Kessler', 3], ['Paul George', 4], ['Tyrese Maxey', 5], ['Ty Jerome', 6]]",
+  "  ok: 379 jugadores · top: [['Domantas Sabonis', 1], ['Austin Reaves', 2], ['Walker Kessler', 3]]",
   "[hhp] Hashtag · proyecciones 2026-27 (top 30 gratis)",
   "  no encontré selector de cantidad; uso la página tal cual",
   "  leídos 30: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Luka Doncic', 4], ['Giannis Antetokounmpo', 5], ['Cade Cunningham', 6]]",
@@ -17,12 +17,12 @@
   "[bbref] 2026",
   "  ok: 583 jugadores",
   "[bbref] 2027",
-  "  ok: 345 jugadores",
+  "  ok: 377 jugadores",
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 84 (nuevos 1)",
-  "  ok: pretemporada 596 · ej: ('Jalen Smith', {'team': 'CHI', 'gp': 6, 'gs': 6, 'min': 18.5, 'pts': 12.2, 'reb': 7.3, 'ast': 1.3, 'stl': 1.2, 'blk': 0.3, 'tpm': 1.7, 'to': 1.0, 'fgp': 0.531, 'ftp': 0.733})",
+  "  juegos guardados 95 (nuevos 11)",
+  "  ok: pretemporada 599 · ej: ('Jalen Smith', {'team': 'CHI', 'gp': 6, 'gs': 6, 'min': 18.5, 'pts': 12.2, 'reb': 7.3, 'ast': 1.3, 'stl': 1.2, 'blk': 0.3, 'tpm': 1.7, 'to': 1.0, 'fgp': 0.531, 'ftp': 0.733})",
   "[depth] ESPN",
   "  ok: 521 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
@@ -453,72 +453,72 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFfgpzz",
      "hidden",
-     "vgood"
+     "elite"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "1.9558840000"
+     "2.8505029000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
      "hidden",
-     ""
+     "vgood"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "0.2826842000"
+     "1.5888776000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
      "hidden",
-     "elite"
+     "bavg"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "6.2305382329"
+     "-0.4558109035"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
      "hidden",
-     "elite"
+     "good"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "4.0143336411"
+     "1.3046914463"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
      "hidden",
-     "vgood"
+     "elite"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "2.0560687292"
+     "4.9861746388"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
      "hidden",
-     ""
+     "elite"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "0.4275849657"
+     "3.3375736790"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
      "hidden",
-     "good"
+     ""
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.4183439975"
+     "0.0000000000"
     ]
    ],
    "postbacks": [
@@ -954,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "3.9100057000"
+     "3.9219829000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -964,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "0.9792547000"
+     "0.9789494000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -974,7 +974,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.2159079256"
+     "0.2160278856"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -984,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.2353684475"
+     "2.2343517746"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -994,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "3.1068914165"
+     "3.1129766058"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1004,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "3.9013807245"
+     "3.9037698532"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1014,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.7236420403"
+     "1.7206860631"
     ]
    ],
    "postbacks": [
@@ -1046,7 +1046,7 @@
     "BLK",
     "TO",
     "TOTAL",
-    375
+    409
    ]
   ],
   [
@@ -1109,61 +1109,61 @@
     "TO",
     "TOTAL"
    ],
-   "n": 348,
+   "n": 379,
    "sample": [
     {
      "R#": "1",
-     "PLAYER": "Anthony Edwards A.Edwards",
-     "POS": "PG,SG",
-     "TEAM": "MIN",
-     "GP": "1",
-     "MPG": "32.6",
-     "FG%": "0.552 (16.0/29.0)",
-     "FT%": "0.800 (4.0/5.0)",
-     "3PM": "9.0",
-     "PTS": "45.0",
-     "TREB": "10.0",
-     "AST": "3.0",
-     "STL": "2.0",
-     "BLK": "1.0",
+     "PLAYER": "Domantas Sabonis D.Sabonis",
+     "POS": "PF,C",
+     "TEAM": "SAC",
+     "GP": "2",
+     "MPG": "36.1",
+     "FG%": "0.833 (7.5/9.0)",
+     "FT%": "0.909 (5.0/5.5)",
+     "3PM": "0.5",
+     "PTS": "20.5",
+     "TREB": "18.5",
+     "AST": "9.0",
+     "STL": "0.5",
+     "BLK": "0.0",
      "TO": "4.0",
-     "TOTAL": "17.10"
+     "TOTAL": "13.16"
     },
     {
      "R#": "2",
-     "PLAYER": "Paul George P.George",
-     "POS": "SF,PF",
-     "TEAM": "BOS",
-     "GP": "1",
-     "MPG": "30.6",
-     "FG%": "0.571 (12.0/21.0)",
-     "FT%": "0.875 (7.0/8.0)",
-     "3PM": "7.0",
-     "PTS": "38.0",
-     "TREB": "5.0",
-     "AST": "3.0",
-     "STL": "5.0",
-     "BLK": "0.0",
-     "TO": "3.0",
-     "TOTAL": "15.79"
+     "PLAYER": "Austin Reaves A.Reaves",
+     "POS": "PG,SG,SF",
+     "TEAM": "LAL",
+     "GP": "2",
+     "MPG": "35.2",
+     "FG%": "0.667 (8.0/12.0)",
+     "FT%": "0.938 (7.5/8.0)",
+     "3PM": "2.0",
+     "PTS": "25.5",
+     "TREB": "3.0",
+     "AST": "7.5",
+     "STL": "2.0",
+     "BLK": "0.5",
+     "TO": "5.0",
+     "TOTAL": "11.84"
     },
     {
      "R#": "3",
-     "PLAYER": "Ty Jerome T.Jerome",
-     "POS": "PG,SG",
-     "TEAM": "MEM",
-     "GP": "1",
-     "MPG": "31.7",
-     "FG%": "0.680 (17.0/25.0)",
-     "FT%": "0.857 (6.0/7.0)",
-     "3PM": "5.0",
-     "PTS": "45.0",
-     "TREB": "7.0",
-     "AST": "6.0",
-     "STL": "0.0",
-     "BLK": "1.0",
-     "TO": "1.0",
-     "TOTAL": "15.65"
+     "PLAYER": "Walker Kessler W.Kessler",
+     "POS": "C",
+     "TEAM": "LAL",
+     "GP": "2",
+     "MPG": "32.3",
+     "FG%": "0.846 (11.0/13.0)",
+     "FT%": "0.444 (2.0/4.5)",
+     "3PM": "0.0",
+     "PTS": "24.0",
+     "TREB": "8.5",
+     "AST": "2.0",
+     "STL": "1.5",
+     "BLK": "4.0",
+     "TO": "1.5",
+     "TOTAL": "11.74"
     }
    ]
   },
@@ -1206,7 +1206,7 @@
      "STL": "1.6",
      "BLK": "0.7",
      "TO": "3.5",
-     "TOTAL": "15.92"
+     "TOTAL": "15.94"
     },
     {
      "R#": "2",
@@ -1225,7 +1225,7 @@
      "STL": "1.1",
      "BLK": "3.2",
      "TO": "2.9",
-     "TOTAL": "14.25"
+     "TOTAL": "14.26"
     },
     {
      "R#": "3",
@@ -1244,7 +1244,7 @@
      "STL": "1.6",
      "BLK": "0.9",
      "TO": "2.3",
-     "TOTAL": "14.07"
+     "TOTAL": "14.08"
     }
    ]
   },
