@@ -2,8 +2,8 @@
  "log": [
   "[hh] Hashtag Basketball (ranking 9-cat temporada pasada)",
   "  selector ctl00$ContentPlaceHolder1$DDSHOW: ['30', '50', '100', '200', '300', '400', '900'] -> 900",
-  "  leídos 403: [['Luka Doncic', 1], ['Devin Booker', 2], ['Austin Reaves', 3], ['Paul George', 4], ['Ty Jerome', 5], ['Domantas Sabonis', 6]]",
-  "  ok: 403 jugadores · top: [['Luka Doncic', 1], ['Devin Booker', 2], ['Austin Reaves', 3]]",
+  "  leídos 411: [['Cooper Flagg', 1], ['Luka Doncic', 2], ['Austin Reaves', 3], ['Domantas Sabonis', 4], ['Nikola Jokic', 5], ['Donovan Mitchell', 6]]",
+  "  ok: 411 jugadores · top: [['Cooper Flagg', 1], ['Luka Doncic', 2], ['Austin Reaves', 3]]",
   "[hhp] Hashtag · proyecciones 2026-27 (top 30 gratis)",
   "  no encontré selector de cantidad; uso la página tal cual",
   "  leídos 30: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Luka Doncic', 4], ['Giannis Antetokounmpo', 5], ['Cade Cunningham', 6]]",
@@ -17,12 +17,12 @@
   "[bbref] 2026",
   "  ok: 583 jugadores",
   "[bbref] 2027",
-  "  ok: 401 jugadores",
+  "  ok: 412 jugadores",
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 111 (nuevos 1)",
-  "  ok: temporada regular 401 · ej: ('Anthony Davis', {'team': 'WSH', 'gp': 4, 'gs': 4, 'min': 33.2, 'pts': 22.8, 'reb': 9.2, 'ast': 2.0, 'stl': 1.2, 'blk': 0.8, 'tpm': 1.0, 'to': 2.5, 'fgp': 0.44, 'ftp': 0.778})",
+  "  juegos guardados 119 (nuevos 8)",
+  "  ok: temporada regular 412 · ej: ('Anthony Davis', {'team': 'WSH', 'gp': 4, 'gs': 4, 'min': 33.2, 'pts': 22.8, 'reb': 9.2, 'ast': 2.0, 'stl': 1.2, 'blk': 0.8, 'tpm': 1.0, 'to': 2.5, 'fgp': 0.44, 'ftp': 0.778})",
   "[depth] ESPN",
   "  ok: 521 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
@@ -453,12 +453,12 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFfgpzz",
      "hidden",
-     ""
+     "vgood"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "0.0922725000"
+     "1.8445035000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -468,57 +468,57 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "2.3810336000"
+     "2.1226180000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
      "hidden",
-     "elite"
+     ""
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "3.4646638873"
+     "0.3541811140"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
      "hidden",
-     "elite"
+     "vgood"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "3.0894500445"
+     "1.8107814246"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
      "hidden",
-     "good"
+     ""
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "1.0336507061"
+     "0.2962330143"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
      "hidden",
-     "elite"
+     "vgood"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "2.6247484734"
+     "1.8455994243"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
      "hidden",
-     "good"
+     "elite"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.3053061420"
+     "4.0673781589"
     ]
    ],
    "postbacks": [
@@ -954,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "3.9410903000"
+     "3.9501311000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -964,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "0.9896454000"
+     "0.9947374000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -974,7 +974,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.1939586665"
+     "0.1938611450"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -984,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.2429288313"
+     "2.2423083880"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -994,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "3.1538197685"
+     "3.1548793780"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1004,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "3.8858833097"
+     "3.8718723016"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1014,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.6746414364"
+     "1.6746766194"
     ]
    ],
    "postbacks": [
@@ -1046,7 +1046,7 @@
     "BLK",
     "TO",
     "TOTAL",
-    434
+    443
    ]
   ],
   [
@@ -1109,10 +1109,28 @@
     "TO",
     "TOTAL"
    ],
-   "n": 403,
+   "n": 411,
    "sample": [
     {
      "R#": "1",
+     "PLAYER": "Cooper Flagg C.Flagg",
+     "POS": "SG,SF,PF",
+     "TEAM": "DAL",
+     "GP": "3",
+     "MPG": "29.9",
+     "FG%": "0.565 (8.7/15.3)",
+     "FT%": "0.900 (6.0/6.7)",
+     "3PM": "1.7",
+     "PTS": "25.0",
+     "TREB": "5.3",
+     "AST": "6.3",
+     "STL": "3.7",
+     "BLK": "1.7",
+     "TO": "4.0",
+     "TOTAL": "14.18"
+    },
+    {
+     "R#": "2",
      "PLAYER": "Luka Doncic L.Doncic",
      "POS": "PG,SG",
      "TEAM": "LAL",
@@ -1127,25 +1145,7 @@
      "STL": "1.7",
      "BLK": "0.3",
      "TO": "7.0",
-     "TOTAL": "12.85"
-    },
-    {
-     "R#": "2",
-     "PLAYER": "Devin Booker D.Booker",
-     "POS": "PG,SG",
-     "TEAM": "PHO",
-     "GP": "2",
-     "MPG": "33.0",
-     "FG%": "0.632 (12.0/19.0)",
-     "FT%": "0.941 (8.0/8.5)",
-     "3PM": "1.0",
-     "PTS": "33.0",
-     "TREB": "5.5",
-     "AST": "4.5",
-     "STL": "0.5",
-     "BLK": "1.0",
-     "TO": "3.0",
-     "TOTAL": "11.30"
+     "TOTAL": "13.18"
     },
     {
      "R#": "3",
@@ -1163,7 +1163,7 @@
      "STL": "1.7",
      "BLK": "1.0",
      "TO": "4.3",
-     "TOTAL": "11.29"
+     "TOTAL": "11.71"
     }
    ]
   },
@@ -1206,7 +1206,7 @@
      "STL": "1.6",
      "BLK": "0.7",
      "TO": "3.5",
-     "TOTAL": "15.91"
+     "TOTAL": "15.89"
     },
     {
      "R#": "2",
@@ -1225,7 +1225,7 @@
      "STL": "1.1",
      "BLK": "3.2",
      "TO": "2.9",
-     "TOTAL": "14.29"
+     "TOTAL": "14.25"
     },
     {
      "R#": "3",
@@ -1244,7 +1244,7 @@
      "STL": "1.6",
      "BLK": "0.9",
      "TO": "2.3",
-     "TOTAL": "14.06"
+     "TOTAL": "14.04"
     }
    ]
   },
