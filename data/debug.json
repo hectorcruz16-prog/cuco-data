@@ -21,9 +21,8 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  scoreboard 20261026: Expecting value: line 1 column 1 (char 0)",
-  "  juegos guardados 123 (nuevos 4)",
-  "  ok: temporada regular 417 · ej: ('Julius Randle', {'team': 'BKN', 'gp': 4, 'gs': 4, 'min': 35.2, 'pts': 22.5, 'reb': 7.5, 'ast': 5.8, 'stl': 0.8, 'blk': 0.2, 'tpm': 1.2, 'to': 4.0, 'fgp': 0.484, 'ftp': 0.781})",
+  "  juegos guardados 126 (nuevos 3)",
+  "  ok: temporada regular 418 · ej: ('Giannis Antetokounmpo', {'team': 'MIA', 'gp': 5, 'gs': 5, 'min': 31.6, 'pts': 27.6, 'reb': 11.2, 'ast': 4.6, 'stl': 1.0, 'blk': 0.6, 'tpm': 0.6, 'to': 3.2, 'fgp': 0.567, 'ftp': 0.595})",
   "[depth] ESPN",
   "  ok: 522 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
@@ -955,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "3.9516017000"
+     "3.9683538000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -965,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "0.9950738000"
+     "0.9958172000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -975,7 +974,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.1937641902"
+     "0.1937549816"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -985,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.2425216057"
+     "2.2289746587"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -995,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "3.1572514451"
+     "3.1634833141"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1005,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "3.8721718253"
+     "3.8680239906"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1015,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.6751736254"
+     "1.6749378543"
     ]
    ],
    "postbacks": [
@@ -1207,7 +1206,7 @@
      "STL": "1.6",
      "BLK": "0.7",
      "TO": "3.5",
-     "TOTAL": "15.89"
+     "TOTAL": "15.90"
     },
     {
      "R#": "2",
@@ -1226,7 +1225,7 @@
      "STL": "1.1",
      "BLK": "3.2",
      "TO": "2.9",
-     "TOTAL": "14.26"
+     "TOTAL": "14.27"
     },
     {
      "R#": "3",
@@ -1275,7 +1274,7 @@
     },
     {
      "RANK": "3",
-     "PLAYER": "Luka Doncic (LAL - PG,SG)",
+     "PLAYER": "Luka Doncic (LAL - PG,SG) OUT",
      "YAHOO": "3",
      "ESPN": "4",
      "AVG": "3.5"
