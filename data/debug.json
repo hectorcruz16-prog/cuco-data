@@ -21,12 +21,10 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  scoreboard 20261027: Expecting value: line 1 column 1 (char 0)",
-  "  scoreboard 20261026: Expecting value: line 1 column 1 (char 0)",
-  "  juegos guardados 138 (nuevos 3)",
-  "  ok: temporada regular 430 · ej: ('Jarrett Allen', {'team': 'CLE', 'gp': 5, 'gs': 5, 'min': 28.4, 'pts': 13.4, 'reb': 8.8, 'ast': 1.0, 'stl': 0.6, 'blk': 2.2, 'tpm': 0.4, 'to': 1.0, 'fgp': 0.615, 'ftp': 0.773})",
+  "  juegos guardados 139 (nuevos 1)",
+  "  ok: temporada regular 430 · ej: ('Moussa Diabate', {'team': 'CHA', 'gp': 6, 'gs': 6, 'min': 29.7, 'pts': 9.3, 'reb': 9.8, 'ast': 2.0, 'stl': 1.8, 'blk': 0.8, 'tpm': 0.0, 'to': 2.2, 'fgp': 0.622, 'ftp': 0.769})",
   "[depth] ESPN",
-  "  ok: 523 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 524 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
