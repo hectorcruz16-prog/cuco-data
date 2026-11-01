@@ -22,10 +22,11 @@
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
   "  scoreboard 20261027: Expecting value: line 1 column 1 (char 0)",
-  "  juegos guardados 148 (nuevos 9)",
-  "  ok: temporada regular 432 · ej: ('Moussa Diabate', {'team': 'CHA', 'gp': 6, 'gs': 6, 'min': 29.7, 'pts': 9.3, 'reb': 9.8, 'ast': 2.0, 'stl': 1.8, 'blk': 0.8, 'tpm': 0.0, 'to': 2.2, 'fgp': 0.622, 'ftp': 0.769})",
+  "  scoreboard 20261026: Expecting value: line 1 column 1 (char 0)",
+  "  juegos guardados 150 (nuevos 2)",
+  "  ok: temporada regular 433 · ej: ('Toumani Camara', {'team': 'POR', 'gp': 5, 'gs': 5, 'min': 26.2, 'pts': 15.2, 'reb': 2.4, 'ast': 1.2, 'stl': 1.4, 'blk': 0.4, 'tpm': 4.0, 'to': 0.8, 'fgp': 0.578, 'ftp': 1.0})",
   "[depth] ESPN",
-  "  ok: 524 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 523 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
@@ -955,7 +956,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "4.0701531000"
+     "4.0826415000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -965,7 +966,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "1.0192139000"
+     "1.0211447000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -975,7 +976,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.2185339991"
+     "0.2185447275"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -985,7 +986,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.2725747521"
+     "2.2773913973"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -995,7 +996,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "3.1861784900"
+     "3.1873993072"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1005,7 +1006,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "3.9048184599"
+     "3.9045833734"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1015,7 +1016,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.6830128197"
+     "1.6833829562"
     ]
    ],
    "postbacks": [
@@ -1207,7 +1208,7 @@
      "STL": "1.6",
      "BLK": "0.7",
      "TO": "3.5",
-     "TOTAL": "16.15"
+     "TOTAL": "16.17"
     },
     {
      "R#": "2",
@@ -1245,7 +1246,7 @@
      "STL": "1.6",
      "BLK": "0.9",
      "TO": "2.3",
-     "TOTAL": "14.27"
+     "TOTAL": "14.28"
     }
    ]
   },
