@@ -21,8 +21,8 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 155 (nuevos 5)",
-  "  ok: temporada regular 441 · ej: ('Toumani Camara', {'team': 'POR', 'gp': 5, 'gs': 5, 'min': 26.2, 'pts': 15.2, 'reb': 2.4, 'ast': 1.2, 'stl': 1.4, 'blk': 0.4, 'tpm': 4.0, 'to': 0.8, 'fgp': 0.578, 'ftp': 1.0})",
+  "  juegos guardados 157 (nuevos 2)",
+  "  ok: temporada regular 441 · ej: ('Paul George', {'team': 'BOS', 'gp': 6, 'gs': 6, 'min': 31.0, 'pts': 20.7, 'reb': 6.0, 'ast': 5.0, 'stl': 2.3, 'blk': 0.3, 'tpm': 3.2, 'to': 2.8, 'fgp': 0.463, 'ftp': 0.895})",
   "[depth] ESPN",
   "  ok: 523 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
