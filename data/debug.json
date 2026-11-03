@@ -2,11 +2,11 @@
  "log": [
   "[hh] Hashtag Basketball (ranking 9-cat temporada pasada)",
   "  selector ctl00$ContentPlaceHolder1$DDSHOW: ['30', '50', '100', '200', '300', '400', '900'] -> 900",
-  "  leídos 442: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Cooper Flagg', 3], ['Stephen Curry', 4], ['Nikola Jokic', 5], ['Tyrese Haliburton', 6]]",
-  "  ok: 442 jugadores · top: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Cooper Flagg', 3]]",
+  "  leídos 447: [['Luka Doncic', 1], ['Stephen Curry', 2], ['Victor Wembanyama', 3], ['Nikola Jokic', 4], ['Cooper Flagg', 5], ['Jamal Murray', 6]]",
+  "  ok: 447 jugadores · top: [['Luka Doncic', 1], ['Stephen Curry', 2], ['Victor Wembanyama', 3]]",
   "[hhp] Hashtag · proyecciones 2026-27 (top 30 gratis)",
   "  no encontré selector de cantidad; uso la página tal cual",
-  "  leídos 30: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Luka Doncic', 4], ['Giannis Antetokounmpo', 5], ['Cade Cunningham', 6]]",
+  "  leídos 30: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Shai Gilgeous-Alexander', 3], ['Luka Doncic', 4], ['Giannis Antetokounmpo', 5], ['Tyrese Maxey', 6]]",
   "  ok: 30 proyecciones · ej: ('Nikola Jokic', {'pts': 28.4, 'reb': 12.7, 'ast': 10.4, 'stl': 1.6, 'blk': 0.7, 'tpm': 1.8, 'to': 3.5, 'fgp': 0.573, 'ftp': 0.816, 'min': 35.1, 'gp': 72.0})",
   "[fp] FantasyPros",
   "  leídos 540: [['Nikola Jokic', 1], ['Victor Wembanyama', 2], ['Luka Doncic', 3], ['Shai Gilgeous-Alexander', 4], ['Cade Cunningham', 5], ['Jayson Tatum', 6]]",
@@ -17,14 +17,14 @@
   "[bbref] 2026",
   "  ok: 583 jugadores",
   "[bbref] 2027",
-  "  ok: 443 jugadores",
+  "  ok: 449 jugadores",
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 167 (nuevos 8)",
-  "  ok: temporada regular 445 · ej: ('Jaylin Williams', {'team': 'OKC', 'gp': 7, 'gs': 1, 'min': 18.4, 'pts': 2.9, 'reb': 4.1, 'ast': 1.6, 'stl': 0.4, 'blk': 0.0, 'tpm': 0.7, 'to': 0.6, 'fgp': 0.2, 'ftp': 1.0})",
+  "  juegos guardados 174 (nuevos 7)",
+  "  ok: temporada regular 448 · ej: ('Jaylin Williams', {'team': 'OKC', 'gp': 7, 'gs': 1, 'min': 18.4, 'pts': 2.9, 'reb': 4.1, 'ast': 1.6, 'stl': 0.4, 'blk': 0.0, 'tpm': 0.7, 'to': 0.6, 'fgp': 0.2, 'ftp': 1.0})",
   "[depth] ESPN",
-  "  ok: 523 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 525 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
@@ -458,7 +458,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "0.7505173000"
+     "1.2941416000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -468,7 +468,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "3.7503687000"
+     "3.6005175000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -478,7 +478,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "4.4667102689"
+     "4.5208232717"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -488,7 +488,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "3.6204306613"
+     "3.7524450146"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -498,27 +498,27 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "1.3764108672"
+     "1.3236027765"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
      "hidden",
-     "vgood"
+     "elite"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "2.3540131244"
+     "2.7696014494"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
      "hidden",
-     "good"
+     "vgood"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.4460132930"
+     "1.6511226800"
     ]
    ],
    "postbacks": [
@@ -954,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "4.0759846000"
+     "4.1188498000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -964,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "1.0208923000"
+     "1.0205560000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -974,7 +974,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.1953438762"
+     "0.1954866321"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -984,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.2792174728"
+     "2.2839115909"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -994,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "3.1857728020"
+     "3.1899399848"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1004,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "3.9079528903"
+     "3.9177573615"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1014,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.6850471171"
+     "1.6336032541"
     ]
    ],
    "postbacks": [
@@ -1046,7 +1046,7 @@
     "BLK",
     "TO",
     "TOTAL",
-    476
+    482
    ]
   ],
   [
@@ -1109,61 +1109,61 @@
     "TO",
     "TOTAL"
    ],
-   "n": 442,
+   "n": 447,
    "sample": [
     {
      "R#": "1",
      "PLAYER": "Luka Doncic L.Doncic",
      "POS": "PG,SG",
      "TEAM": "LAL",
-     "GP": "6",
-     "MPG": "35.8",
-     "FG%": "0.482 (11.3/23.5)",
-     "FT%": "0.902 (9.2/10.2)",
-     "3PM": "5.8",
-     "PTS": "37.7",
-     "TREB": "8.2",
-     "AST": "7.3",
-     "STL": "1.8",
-     "BLK": "0.8",
-     "TO": "5.5",
-     "TOTAL": "17.63"
+     "GP": "7",
+     "MPG": "35.7",
+     "FG%": "0.497 (11.7/23.6)",
+     "FT%": "0.887 (9.0/10.1)",
+     "3PM": "5.9",
+     "PTS": "38.3",
+     "TREB": "8.0",
+     "AST": "8.1",
+     "STL": "1.9",
+     "BLK": "0.7",
+     "TO": "5.0",
+     "TOTAL": "18.49"
     },
     {
      "R#": "2",
-     "PLAYER": "Victor Wembanyama V.Wembanyama",
-     "POS": "C",
-     "TEAM": "SA",
+     "PLAYER": "Stephen Curry S.Curry",
+     "POS": "PG",
+     "TEAM": "GS",
      "GP": "6",
-     "MPG": "32.4",
-     "FG%": "0.485 (10.7/22.0)",
-     "FT%": "0.744 (4.8/6.5)",
-     "3PM": "1.8",
-     "PTS": "28.0",
-     "TREB": "10.7",
-     "AST": "3.0",
+     "MPG": "28.8",
+     "FG%": "0.468 (8.5/18.2)",
+     "FT%": "0.981 (8.5/8.7)",
+     "3PM": "4.5",
+     "PTS": "30.0",
+     "TREB": "4.2",
+     "AST": "4.5",
      "STL": "1.3",
-     "BLK": "4.2",
-     "TO": "1.8",
-     "TOTAL": "13.42"
+     "BLK": "0.2",
+     "TO": "2.0",
+     "TOTAL": "12.21"
     },
     {
      "R#": "3",
-     "PLAYER": "Cooper Flagg C.Flagg",
-     "POS": "SG,SF,PF",
-     "TEAM": "DAL",
-     "GP": "5",
-     "MPG": "32.3",
-     "FG%": "0.557 (9.8/17.6)",
-     "FT%": "0.853 (5.8/6.8)",
-     "3PM": "1.4",
-     "PTS": "26.8",
-     "TREB": "6.0",
-     "AST": "6.6",
-     "STL": "2.6",
-     "BLK": "1.2",
-     "TO": "3.0",
-     "TOTAL": "12.56"
+     "PLAYER": "Victor Wembanyama V.Wembanyama",
+     "POS": "C",
+     "TEAM": "SA",
+     "GP": "7",
+     "MPG": "31.2",
+     "FG%": "0.469 (9.9/21.0)",
+     "FT%": "0.738 (4.4/6.0)",
+     "3PM": "1.6",
+     "PTS": "25.7",
+     "TREB": "10.7",
+     "AST": "3.3",
+     "STL": "1.3",
+     "BLK": "4.0",
+     "TO": "2.3",
+     "TOTAL": "12.14"
     }
    ]
   },
@@ -1206,7 +1206,7 @@
      "STL": "1.6",
      "BLK": "0.7",
      "TO": "3.5",
-     "TOTAL": "16.15"
+     "TOTAL": "16.13"
     },
     {
      "R#": "2",
@@ -1225,7 +1225,7 @@
      "STL": "1.1",
      "BLK": "3.2",
      "TO": "2.9",
-     "TOTAL": "14.47"
+     "TOTAL": "14.43"
     },
     {
      "R#": "3",
@@ -1235,16 +1235,16 @@
      "TEAM": "OKC",
      "GP": "71",
      "MPG": "33.5",
-     "FG%": "0.534 (11.1/20.7)",
+     "FG%": "0.531 (11.0/20.7)",
      "FT%": "0.889 (8.0/8.9)",
      "3PM": "1.9",
-     "PTS": "32.1",
+     "PTS": "31.9",
      "TREB": "4.7",
      "AST": "6.5",
      "STL": "1.6",
      "BLK": "0.9",
      "TO": "2.3",
-     "TOTAL": "14.26"
+     "TOTAL": "14.04"
     }
    ]
   },
