@@ -21,10 +21,10 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 174 (nuevos 7)",
+  "  juegos guardados 174 (nuevos 0)",
   "  ok: temporada regular 448 · ej: ('Jaylin Williams', {'team': 'OKC', 'gp': 7, 'gs': 1, 'min': 18.4, 'pts': 2.9, 'reb': 4.1, 'ast': 1.6, 'stl': 0.4, 'blk': 0.0, 'tpm': 0.7, 'to': 0.6, 'fgp': 0.2, 'ftp': 1.0})",
   "[depth] ESPN",
-  "  ok: 525 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 524 · titulares: 150 · ej: [('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
