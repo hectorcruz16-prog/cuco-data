@@ -954,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "4.1188498000"
+     "4.1200786000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -964,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "1.0205560000"
+     "0.9945069000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -974,7 +974,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.1954866321"
+     "0.1951565563"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -984,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.2839115909"
+     "2.2775368067"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -994,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "3.1899399848"
+     "3.1904179097"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1004,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "3.9177573615"
+     "3.9105651490"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1014,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.6336032541"
+     "1.6245409301"
     ]
    ],
    "postbacks": [
@@ -1206,7 +1206,7 @@
      "STL": "1.6",
      "BLK": "0.7",
      "TO": "3.5",
-     "TOTAL": "16.13"
+     "TOTAL": "16.08"
     },
     {
      "R#": "2",
@@ -1225,7 +1225,7 @@
      "STL": "1.1",
      "BLK": "3.2",
      "TO": "2.9",
-     "TOTAL": "14.43"
+     "TOTAL": "14.40"
     },
     {
      "R#": "3",
@@ -1244,7 +1244,7 @@
      "STL": "1.6",
      "BLK": "0.9",
      "TO": "2.3",
-     "TOTAL": "14.04"
+     "TOTAL": "13.99"
     }
    ]
   },
