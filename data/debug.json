@@ -21,10 +21,10 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 199 (nuevos 9)",
-  "  ok: temporada regular 457 · ej: ('AJ Dybantsa', {'team': 'WSH', 'gp': 5, 'gs': 5, 'min': 31.6, 'pts': 15.4, 'reb': 6.0, 'ast': 2.2, 'stl': 1.8, 'blk': 0.0, 'tpm': 0.8, 'to': 1.4, 'fgp': 0.415, 'ftp': 0.826})",
+  "  juegos guardados 200 (nuevos 1)",
+  "  ok: temporada regular 459 · ej: ('Aaron Gordon', {'team': 'DEN', 'gp': 8, 'gs': 8, 'min': 29.1, 'pts': 12.2, 'reb': 5.2, 'ast': 2.1, 'stl': 1.1, 'blk': 0.4, 'tpm': 1.2, 'to': 1.2, 'fgp': 0.413, 'ftp': 0.812})",
   "[depth] ESPN",
-  "  ok: 524 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 523 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
@@ -954,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "1.2741237000"
+     "1.2405701000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -964,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "1.1545289000"
+     "1.1553366000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -984,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.1905264403"
+     "2.1905900518"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -994,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "2.8644993867"
+     "2.8644805116"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1206,7 +1206,7 @@
      "STL": "1.2",
      "BLK": "3.6",
      "TO": "2.9",
-     "TOTAL": "15.51"
+     "TOTAL": "15.48"
     },
     {
      "R#": "2",
@@ -1225,7 +1225,7 @@
      "STL": "1.7",
      "BLK": "0.5",
      "TO": "4.0",
-     "TOTAL": "15.17"
+     "TOTAL": "15.12"
     },
     {
      "R#": "3",
@@ -1244,7 +1244,7 @@
      "STL": "1.6",
      "BLK": "0.7",
      "TO": "3.3",
-     "TOTAL": "13.22"
+     "TOTAL": "13.19"
     }
    ]
   },
