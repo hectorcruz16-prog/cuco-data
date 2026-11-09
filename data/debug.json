@@ -2,7 +2,8 @@
  "log": [
   "[hh] Hashtag Basketball (ranking 9-cat temporada pasada)",
   "  selector ctl00$ContentPlaceHolder1$DDSHOW: ['30', '50', '100', '200', '300', '400', '900'] -> 900",
-  "  FALLÓ: HTTPSConnectionPool(host='hashtagbasketball.com', port=443): Read timed out. (read timeout=60)",
+  "  leídos 461: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Stephen Curry', 3], ['Nikola Jokic', 4], ['Cooper Flagg', 5], ['Tyrese Haliburton', 6]]",
+  "  ok: 461 jugadores · top: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Stephen Curry', 3]]",
   "[hhp] Hashtag · proyecciones 2026-27 (top 30 gratis)",
   "  no encontré selector de cantidad; uso la página tal cual",
   "  leídos 30: [['Victor Wembanyama', 1], ['Luka Doncic', 2], ['Nikola Jokic', 3], ['Shai Gilgeous-Alexander', 4], ['Giannis Antetokounmpo', 5], ['Tyrese Maxey', 6]]",
@@ -16,12 +17,12 @@
   "[bbref] 2026",
   "  ok: 583 jugadores",
   "[bbref] 2027",
-  "  ok: 460 jugadores",
+  "  ok: 462 jugadores",
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 208 (nuevos 2)",
-  "  ok: temporada regular 460 · ej: ('LeBron James', {'team': 'PHI', 'gp': 9, 'gs': 9, 'min': 32.9, 'pts': 15.6, 'reb': 7.1, 'ast': 6.7, 'stl': 1.4, 'blk': 0.8, 'tpm': 0.9, 'to': 2.9, 'fgp': 0.442, 'ftp': 0.684})",
+  "  juegos guardados 213 (nuevos 5)",
+  "  ok: temporada regular 461 · ej: ('LeBron James', {'team': 'PHI', 'gp': 9, 'gs': 9, 'min': 32.9, 'pts': 15.6, 'reb': 7.1, 'ast': 6.7, 'stl': 1.4, 'blk': 0.8, 'tpm': 0.9, 'to': 2.9, 'fgp': 0.442, 'ftp': 0.684})",
   "[depth] ESPN",
   "  ok: 524 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
@@ -457,7 +458,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "1.4457416000"
+     "1.4641268000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -467,7 +468,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "3.3625317000"
+     "3.4151835000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -477,7 +478,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "4.3802461699"
+     "4.3954336226"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -487,7 +488,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "3.9822118925"
+     "4.0122904530"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -497,7 +498,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "1.1643678379"
+     "1.1750361282"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -507,7 +508,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "2.6267755979"
+     "2.6240547500"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -517,7 +518,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.3964274862"
+     "1.4279604108"
     ]
    ],
    "postbacks": [
@@ -1031,6 +1032,27 @@
    [
     "R#",
     "PLAYER",
+    "POS",
+    "TEAM",
+    "GP",
+    "MPG",
+    "FG%",
+    "FT%",
+    "3PM",
+    "PTS",
+    "TREB",
+    "AST",
+    "STL",
+    "BLK",
+    "TO",
+    "TOTAL",
+    497
+   ]
+  ],
+  [
+   [
+    "R#",
+    "PLAYER",
     "ADP",
     "POS",
     "TEAM",
@@ -1068,6 +1090,83 @@
   ]
  ],
  "tables": [
+  {
+   "heads": [
+    "R#",
+    "PLAYER",
+    "POS",
+    "TEAM",
+    "GP",
+    "MPG",
+    "FG%",
+    "FT%",
+    "3PM",
+    "PTS",
+    "TREB",
+    "AST",
+    "STL",
+    "BLK",
+    "TO",
+    "TOTAL"
+   ],
+   "n": 461,
+   "sample": [
+    {
+     "R#": "1",
+     "PLAYER": "Luka Doncic L.Doncic",
+     "POS": "PG,SG",
+     "TEAM": "LAL",
+     "GP": "9",
+     "MPG": "35.9",
+     "FG%": "0.498 (12.2/24.6)",
+     "FT%": "0.873 (9.9/11.3)",
+     "3PM": "5.8",
+     "PTS": "40.1",
+     "TREB": "7.8",
+     "AST": "7.7",
+     "STL": "1.7",
+     "BLK": "0.7",
+     "TO": "4.9",
+     "TOTAL": "18.09"
+    },
+    {
+     "R#": "2",
+     "PLAYER": "Victor Wembanyama V.Wembanyama",
+     "POS": "C",
+     "TEAM": "SA",
+     "GP": "10",
+     "MPG": "30.3",
+     "FG%": "0.505 (10.4/20.6)",
+     "FT%": "0.771 (6.4/8.3)",
+     "3PM": "1.9",
+     "PTS": "29.1",
+     "TREB": "12.0",
+     "AST": "3.0",
+     "STL": "1.2",
+     "BLK": "3.9",
+     "TO": "2.2",
+     "TOTAL": "14.69"
+    },
+    {
+     "R#": "3",
+     "PLAYER": "Stephen Curry S.Curry",
+     "POS": "PG",
+     "TEAM": "GS",
+     "GP": "8",
+     "MPG": "29.6",
+     "FG%": "0.497 (9.1/18.4)",
+     "FT%": "0.985 (8.3/8.4)",
+     "3PM": "4.8",
+     "PTS": "31.3",
+     "TREB": "4.0",
+     "AST": "4.6",
+     "STL": "1.1",
+     "BLK": "0.1",
+     "TO": "1.9",
+     "TOTAL": "12.89"
+    }
+   ]
+  },
   {
    "heads": [
     "R#",
@@ -1161,7 +1260,7 @@
    "sample": [
     {
      "RANK": "1",
-     "PLAYER": "Nikola Jokic (DEN - C)",
+     "PLAYER": "Nikola Jokic (DEN - C) DTD",
      "YAHOO": "1",
      "ESPN": "1",
      "AVG": "1.0"
@@ -1175,7 +1274,7 @@
     },
     {
      "RANK": "3",
-     "PLAYER": "Luka Doncic (LAL - PG,SG) OUT",
+     "PLAYER": "Luka Doncic (LAL - PG,SG) DTD",
      "YAHOO": "3",
      "ESPN": "4",
      "AVG": "3.5"
