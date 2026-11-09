@@ -2,8 +2,7 @@
  "log": [
   "[hh] Hashtag Basketball (ranking 9-cat temporada pasada)",
   "  selector ctl00$ContentPlaceHolder1$DDSHOW: ['30', '50', '100', '200', '300', '400', '900'] -> 900",
-  "  leídos 458: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Stephen Curry', 3], ['Nikola Jokic', 4], ['Tyrese Haliburton', 5], ['Cooper Flagg', 6]]",
-  "  ok: 458 jugadores · top: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Stephen Curry', 3]]",
+  "  FALLÓ: HTTPSConnectionPool(host='hashtagbasketball.com', port=443): Read timed out. (read timeout=60)",
   "[hhp] Hashtag · proyecciones 2026-27 (top 30 gratis)",
   "  no encontré selector de cantidad; uso la página tal cual",
   "  leídos 30: [['Victor Wembanyama', 1], ['Luka Doncic', 2], ['Nikola Jokic', 3], ['Shai Gilgeous-Alexander', 4], ['Giannis Antetokounmpo', 5], ['Tyrese Maxey', 6]]",
@@ -21,10 +20,10 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 206 (nuevos 6)",
-  "  ok: temporada regular 459 · ej: ('Aaron Gordon', {'team': 'DEN', 'gp': 8, 'gs': 8, 'min': 29.1, 'pts': 12.2, 'reb': 5.2, 'ast': 2.1, 'stl': 1.1, 'blk': 0.4, 'tpm': 1.2, 'to': 1.2, 'fgp': 0.413, 'ftp': 0.812})",
+  "  juegos guardados 208 (nuevos 2)",
+  "  ok: temporada regular 460 · ej: ('LeBron James', {'team': 'PHI', 'gp': 9, 'gs': 9, 'min': 32.9, 'pts': 15.6, 'reb': 7.1, 'ast': 6.7, 'stl': 1.4, 'blk': 0.8, 'tpm': 0.9, 'to': 2.9, 'fgp': 0.442, 'ftp': 0.684})",
   "[depth] ESPN",
-  "  ok: 525 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 524 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
@@ -1032,27 +1031,6 @@
    [
     "R#",
     "PLAYER",
-    "POS",
-    "TEAM",
-    "GP",
-    "MPG",
-    "FG%",
-    "FT%",
-    "3PM",
-    "PTS",
-    "TREB",
-    "AST",
-    "STL",
-    "BLK",
-    "TO",
-    "TOTAL",
-    494
-   ]
-  ],
-  [
-   [
-    "R#",
-    "PLAYER",
     "ADP",
     "POS",
     "TEAM",
@@ -1090,83 +1068,6 @@
   ]
  ],
  "tables": [
-  {
-   "heads": [
-    "R#",
-    "PLAYER",
-    "POS",
-    "TEAM",
-    "GP",
-    "MPG",
-    "FG%",
-    "FT%",
-    "3PM",
-    "PTS",
-    "TREB",
-    "AST",
-    "STL",
-    "BLK",
-    "TO",
-    "TOTAL"
-   ],
-   "n": 458,
-   "sample": [
-    {
-     "R#": "1",
-     "PLAYER": "Luka Doncic L.Doncic",
-     "POS": "PG,SG",
-     "TEAM": "LAL",
-     "GP": "9",
-     "MPG": "35.9",
-     "FG%": "0.498 (12.2/24.6)",
-     "FT%": "0.873 (9.9/11.3)",
-     "3PM": "5.8",
-     "PTS": "40.1",
-     "TREB": "7.8",
-     "AST": "7.7",
-     "STL": "1.7",
-     "BLK": "0.7",
-     "TO": "4.9",
-     "TOTAL": "17.95"
-    },
-    {
-     "R#": "2",
-     "PLAYER": "Victor Wembanyama V.Wembanyama",
-     "POS": "C",
-     "TEAM": "SA",
-     "GP": "10",
-     "MPG": "30.3",
-     "FG%": "0.505 (10.4/20.6)",
-     "FT%": "0.771 (6.4/8.3)",
-     "3PM": "1.9",
-     "PTS": "29.1",
-     "TREB": "12.0",
-     "AST": "3.0",
-     "STL": "1.2",
-     "BLK": "3.9",
-     "TO": "2.2",
-     "TOTAL": "14.60"
-    },
-    {
-     "R#": "3",
-     "PLAYER": "Stephen Curry S.Curry",
-     "POS": "PG",
-     "TEAM": "GS",
-     "GP": "8",
-     "MPG": "29.6",
-     "FG%": "0.497 (9.1/18.4)",
-     "FT%": "0.985 (8.3/8.4)",
-     "3PM": "4.8",
-     "PTS": "31.3",
-     "TREB": "4.0",
-     "AST": "4.6",
-     "STL": "1.1",
-     "BLK": "0.1",
-     "TO": "1.9",
-     "TOTAL": "12.75"
-    }
-   ]
-  },
   {
    "heads": [
     "R#",
@@ -1274,7 +1175,7 @@
     },
     {
      "RANK": "3",
-     "PLAYER": "Luka Doncic (LAL - PG,SG) DTD",
+     "PLAYER": "Luka Doncic (LAL - PG,SG) OUT",
      "YAHOO": "3",
      "ESPN": "4",
      "AVG": "3.5"
