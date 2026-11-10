@@ -17,11 +17,11 @@
   "[bbref] 2026",
   "  ok: 583 jugadores",
   "[bbref] 2027",
-  "  ok: 462 jugadores",
+  "  ok: 463 jugadores",
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 219 (nuevos 6)",
+  "  juegos guardados 221 (nuevos 2)",
   "  ok: temporada regular 462 · ej: ('Ziaire Williams', {'team': 'LAL', 'gp': 9, 'gs': 5, 'min': 24.6, 'pts': 11.2, 'reb': 2.8, 'ast': 1.7, 'stl': 1.4, 'blk': 0.2, 'tpm': 2.1, 'to': 0.4, 'fgp': 0.545, 'ftp': 0.833})",
   "[depth] ESPN",
   "  ok: 524 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
@@ -458,7 +458,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "1.4625663000"
+     "1.4764018000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -468,7 +468,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "3.5818582000"
+     "3.5719660000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -478,7 +478,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "4.1139989755"
+     "4.1233664746"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -488,7 +488,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "3.8997844354"
+     "3.9084951473"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -498,7 +498,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "1.1762788226"
+     "1.1797103172"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -508,7 +508,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "2.7271126639"
+     "2.7425726538"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -518,7 +518,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.9640216008"
+     "1.9927379220"
     ]
    ],
    "postbacks": [
@@ -954,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "1.2380544000"
+     "1.2389920000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -964,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "1.1524667000"
+     "1.1453371000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -974,7 +974,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.1880602179"
+     "0.1880393316"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -984,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.1964163605"
+     "2.1924204052"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -994,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "2.8606016384"
+     "2.8676924273"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1004,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "0.2781342468"
+     "0.2780277128"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1014,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "0.6720213537"
+     "0.6727405075"
     ]
    ],
    "postbacks": [
@@ -1127,43 +1127,43 @@
      "STL": "2.0",
      "BLK": "0.8",
      "TO": "5.0",
-     "TOTAL": "18.70"
+     "TOTAL": "18.76"
     },
     {
      "R#": "2",
      "PLAYER": "Victor Wembanyama V.Wembanyama",
      "POS": "C",
      "TEAM": "SA",
-     "GP": "10",
-     "MPG": "30.3",
-     "FG%": "0.505 (10.4/20.6)",
-     "FT%": "0.771 (6.4/8.3)",
+     "GP": "11",
+     "MPG": "29.8",
+     "FG%": "0.529 (10.8/20.5)",
+     "FT%": "0.774 (6.5/8.5)",
      "3PM": "1.9",
-     "PTS": "29.1",
-     "TREB": "12.0",
+     "PTS": "30.1",
+     "TREB": "11.9",
      "AST": "3.0",
-     "STL": "1.2",
-     "BLK": "3.9",
-     "TO": "2.2",
-     "TOTAL": "14.78"
+     "STL": "1.1",
+     "BLK": "4.4",
+     "TO": "2.1",
+     "TOTAL": "16.61"
     },
     {
      "R#": "3",
      "PLAYER": "Stephen Curry S.Curry",
      "POS": "PG",
      "TEAM": "GS",
-     "GP": "8",
-     "MPG": "29.6",
-     "FG%": "0.497 (9.1/18.4)",
-     "FT%": "0.985 (8.3/8.4)",
-     "3PM": "4.8",
-     "PTS": "31.3",
-     "TREB": "4.0",
-     "AST": "4.6",
-     "STL": "1.1",
+     "GP": "9",
+     "MPG": "28.6",
+     "FG%": "0.503 (8.8/17.4)",
+     "FT%": "0.987 (8.3/8.4)",
+     "3PM": "4.7",
+     "PTS": "30.6",
+     "TREB": "4.1",
+     "AST": "4.3",
+     "STL": "1.0",
      "BLK": "0.1",
-     "TO": "1.9",
-     "TOTAL": "12.90"
+     "TO": "1.8",
+     "TOTAL": "12.71"
     }
    ]
   },
@@ -1206,7 +1206,7 @@
      "STL": "1.2",
      "BLK": "3.6",
      "TO": "2.9",
-     "TOTAL": "15.45"
+     "TOTAL": "15.46"
     },
     {
      "R#": "2",
@@ -1225,7 +1225,7 @@
      "STL": "1.7",
      "BLK": "0.5",
      "TO": "4.0",
-     "TOTAL": "15.13"
+     "TOTAL": "15.12"
     },
     {
      "R#": "3",
