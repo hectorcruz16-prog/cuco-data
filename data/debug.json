@@ -21,7 +21,7 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 221 (nuevos 2)",
+  "  juegos guardados 221 (nuevos 0)",
   "  ok: temporada regular 462 · ej: ('Ziaire Williams', {'team': 'LAL', 'gp': 9, 'gs': 5, 'min': 24.6, 'pts': 11.2, 'reb': 2.8, 'ast': 1.7, 'stl': 1.4, 'blk': 0.2, 'tpm': 2.1, 'to': 0.4, 'fgp': 0.545, 'ftp': 0.833})",
   "[depth] ESPN",
   "  ok: 524 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
