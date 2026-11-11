@@ -21,10 +21,10 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 221 (nuevos 0)",
-  "  ok: temporada regular 462 · ej: ('Ziaire Williams', {'team': 'LAL', 'gp': 9, 'gs': 5, 'min': 24.6, 'pts': 11.2, 'reb': 2.8, 'ast': 1.7, 'stl': 1.4, 'blk': 0.2, 'tpm': 2.1, 'to': 0.4, 'fgp': 0.545, 'ftp': 0.833})",
+  "  juegos guardados 227 (nuevos 6)",
+  "  ok: temporada regular 462 · ej: ('Kyle Kuzma', {'team': 'MIL', 'gp': 11, 'gs': 11, 'min': 27.3, 'pts': 11.0, 'reb': 5.7, 'ast': 2.7, 'stl': 0.9, 'blk': 0.3, 'tpm': 1.6, 'to': 1.6, 'fgp': 0.475, 'ftp': 0.583})",
   "[depth] ESPN",
-  "  ok: 524 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 525 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
@@ -453,12 +453,12 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFfgpzz",
      "hidden",
-     "good"
+     "vgood"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "1.4764018000"
+     "1.5022707000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -468,7 +468,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "3.5719660000"
+     "3.6186492000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -478,7 +478,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "4.1233664746"
+     "4.1210441749"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -488,7 +488,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "3.9084951473"
+     "3.9180124519"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -498,7 +498,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "1.1797103172"
+     "1.1898037330"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -508,7 +508,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "2.7425726538"
+     "2.7687525651"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -518,7 +518,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.9927379220"
+     "2.0191858329"
     ]
    ],
    "postbacks": [
@@ -954,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "1.2389920000"
+     "1.2390148000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -964,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "1.1453371000"
+     "1.1453388000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -974,7 +974,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.1880393316"
+     "0.1881786668"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -984,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.1924204052"
+     "2.1927652501"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -994,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "2.8676924273"
+     "2.8669273783"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1004,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "0.2780277128"
+     "0.2835325979"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1014,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "0.6727405075"
+     "0.6734093575"
     ]
    ],
    "postbacks": [
@@ -1127,7 +1127,7 @@
      "STL": "2.0",
      "BLK": "0.8",
      "TO": "5.0",
-     "TOTAL": "18.76"
+     "TOTAL": "19.08"
     },
     {
      "R#": "2",
@@ -1145,7 +1145,7 @@
      "STL": "1.1",
      "BLK": "4.4",
      "TO": "2.1",
-     "TOTAL": "16.61"
+     "TOTAL": "16.90"
     },
     {
      "R#": "3",
@@ -1163,7 +1163,7 @@
      "STL": "1.0",
      "BLK": "0.1",
      "TO": "1.8",
-     "TOTAL": "12.71"
+     "TOTAL": "13.00"
     }
    ]
   },
@@ -1225,7 +1225,7 @@
      "STL": "1.7",
      "BLK": "0.5",
      "TO": "4.0",
-     "TOTAL": "15.12"
+     "TOTAL": "15.13"
     },
     {
      "R#": "3",
