@@ -2,8 +2,8 @@
  "log": [
   "[hh] Hashtag Basketball (ranking 9-cat temporada pasada)",
   "  selector ctl00$ContentPlaceHolder1$DDSHOW: ['30', '50', '100', '200', '300', '400', '900'] -> 900",
-  "  leídos 462: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Stephen Curry', 3], ['Nikola Jokic', 4], ['Cooper Flagg', 5], ['Tyrese Haliburton', 6]]",
-  "  ok: 462 jugadores · top: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Stephen Curry', 3]]",
+  "  leídos 464: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Nikola Jokic', 3], ['Cooper Flagg', 4], ['Stephen Curry', 5], ['Tyrese Haliburton', 6]]",
+  "  ok: 464 jugadores · top: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Nikola Jokic', 3]]",
   "[hhp] Hashtag · proyecciones 2026-27 (top 30 gratis)",
   "  no encontré selector de cantidad; uso la página tal cual",
   "  leídos 30: [['Victor Wembanyama', 1], ['Luka Doncic', 2], ['Nikola Jokic', 3], ['Shai Gilgeous-Alexander', 4], ['Giannis Antetokounmpo', 5], ['Tyrese Maxey', 6]]",
@@ -17,12 +17,12 @@
   "[bbref] 2026",
   "  ok: 583 jugadores",
   "[bbref] 2027",
-  "  ok: 463 jugadores",
+  "  ok: 465 jugadores",
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 230 (nuevos 3)",
-  "  ok: temporada regular 462 · ej: ('Anthony Davis', {'team': 'WSH', 'gp': 10, 'gs': 10, 'min': 33.3, 'pts': 25.2, 'reb': 10.0, 'ast': 1.7, 'stl': 1.3, 'blk': 1.1, 'tpm': 0.9, 'to': 2.0, 'fgp': 0.511, 'ftp': 0.836})",
+  "  juegos guardados 237 (nuevos 7)",
+  "  ok: temporada regular 464 · ej: ('Anthony Davis', {'team': 'WSH', 'gp': 10, 'gs': 10, 'min': 33.3, 'pts': 25.2, 'reb': 10.0, 'ast': 1.7, 'stl': 1.3, 'blk': 1.1, 'tpm': 0.9, 'to': 2.0, 'fgp': 0.511, 'ftp': 0.836})",
   "[depth] ESPN",
   "  ok: 526 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
@@ -453,12 +453,12 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFfgpzz",
      "hidden",
-     "vgood"
+     "good"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "1.5022707000"
+     "1.1537394000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -468,7 +468,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "3.6186492000"
+     "3.1417221000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -478,7 +478,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "4.1210441749"
+     "3.9686790576"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -488,7 +488,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "3.9180124519"
+     "3.8207833357"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -498,7 +498,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "1.1898037330"
+     "1.1167570722"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -508,7 +508,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "2.7687525651"
+     "2.6817173440"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -518,7 +518,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "2.0191858329"
+     "2.0466927973"
     ]
    ],
    "postbacks": [
@@ -954,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "1.2408130000"
+     "1.2773660000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -964,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "1.1563696000"
+     "1.1590252000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -984,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.1997009656"
+     "2.1990799348"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -994,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "2.8690465548"
+     "2.8738561346"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1004,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "0.2841301683"
+     "0.2840958610"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1014,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "0.6738619945"
+     "0.6743086364"
     ]
    ],
    "postbacks": [
@@ -1046,7 +1046,7 @@
     "BLK",
     "TO",
     "TOTAL",
-    498
+    500
    ]
   ],
   [
@@ -1109,61 +1109,61 @@
     "TO",
     "TOTAL"
    ],
-   "n": 462,
+   "n": 464,
    "sample": [
     {
      "R#": "1",
      "PLAYER": "Luka Doncic L.Doncic",
      "POS": "PG,SG",
      "TEAM": "LAL",
-     "GP": "10",
-     "MPG": "36.3",
-     "FG%": "0.498 (12.1/24.3)",
-     "FT%": "0.881 (9.6/10.9)",
+     "GP": "11",
+     "MPG": "35.9",
+     "FG%": "0.489 (11.9/24.4)",
+     "FT%": "0.866 (9.4/10.8)",
      "3PM": "5.5",
-     "PTS": "39.3",
-     "TREB": "7.8",
-     "AST": "7.9",
+     "PTS": "38.6",
+     "TREB": "7.5",
+     "AST": "7.6",
      "STL": "2.0",
-     "BLK": "0.8",
+     "BLK": "0.7",
      "TO": "5.0",
-     "TOTAL": "19.08"
+     "TOTAL": "17.47"
     },
     {
      "R#": "2",
      "PLAYER": "Victor Wembanyama V.Wembanyama",
      "POS": "C",
      "TEAM": "SA",
-     "GP": "11",
-     "MPG": "29.8",
-     "FG%": "0.529 (10.8/20.5)",
-     "FT%": "0.774 (6.5/8.5)",
+     "GP": "12",
+     "MPG": "30.0",
+     "FG%": "0.543 (11.0/20.3)",
+     "FT%": "0.776 (6.3/8.2)",
      "3PM": "1.9",
-     "PTS": "30.1",
-     "TREB": "11.9",
-     "AST": "3.0",
-     "STL": "1.1",
+     "PTS": "30.3",
+     "TREB": "11.7",
+     "AST": "2.8",
+     "STL": "1.2",
      "BLK": "4.4",
-     "TO": "2.1",
-     "TOTAL": "16.90"
+     "TO": "2.0",
+     "TOTAL": "17.37"
     },
     {
      "R#": "3",
-     "PLAYER": "Stephen Curry S.Curry",
-     "POS": "PG",
-     "TEAM": "GS",
-     "GP": "9",
-     "MPG": "28.6",
-     "FG%": "0.503 (8.8/17.4)",
-     "FT%": "0.987 (8.3/8.4)",
-     "3PM": "4.7",
-     "PTS": "30.6",
-     "TREB": "4.1",
-     "AST": "4.3",
-     "STL": "1.0",
-     "BLK": "0.1",
-     "TO": "1.8",
-     "TOTAL": "13.00"
+     "PLAYER": "Nikola Jokic N.Jokic",
+     "POS": "C",
+     "TEAM": "DEN",
+     "GP": "10",
+     "MPG": "36.3",
+     "FG%": "0.500 (9.2/18.4)",
+     "FT%": "0.872 (4.1/4.7)",
+     "3PM": "1.0",
+     "PTS": "23.5",
+     "TREB": "10.8",
+     "AST": "9.0",
+     "STL": "1.8",
+     "BLK": "1.2",
+     "TO": "3.0",
+     "TOTAL": "12.37"
     }
    ]
   },
@@ -1206,7 +1206,7 @@
      "STL": "1.2",
      "BLK": "3.6",
      "TO": "2.9",
-     "TOTAL": "15.49"
+     "TOTAL": "15.55"
     },
     {
      "R#": "2",
@@ -1225,7 +1225,7 @@
      "STL": "1.7",
      "BLK": "0.5",
      "TO": "4.0",
-     "TOTAL": "15.17"
+     "TOTAL": "15.22"
     },
     {
      "R#": "3",
@@ -1244,7 +1244,7 @@
      "STL": "1.6",
      "BLK": "0.7",
      "TO": "3.3",
-     "TOTAL": "13.22"
+     "TOTAL": "13.27"
     }
    ]
   },
