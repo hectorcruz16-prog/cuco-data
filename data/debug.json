@@ -2,8 +2,8 @@
  "log": [
   "[hh] Hashtag Basketball (ranking 9-cat temporada pasada)",
   "  selector ctl00$ContentPlaceHolder1$DDSHOW: ['30', '50', '100', '200', '300', '400', '900'] -> 900",
-  "  leídos 464: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Nikola Jokic', 3], ['Cooper Flagg', 4], ['Stephen Curry', 5], ['Tyrese Haliburton', 6]]",
-  "  ok: 464 jugadores · top: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Nikola Jokic', 3]]",
+  "  leídos 465: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Nikola Jokic', 3], ['Stephen Curry', 4], ['Cooper Flagg', 5], ['Jamal Murray', 6]]",
+  "  ok: 465 jugadores · top: [['Luka Doncic', 1], ['Victor Wembanyama', 2], ['Nikola Jokic', 3]]",
   "[hhp] Hashtag · proyecciones 2026-27 (top 30 gratis)",
   "  no encontré selector de cantidad; uso la página tal cual",
   "  leídos 30: [['Victor Wembanyama', 1], ['Luka Doncic', 2], ['Nikola Jokic', 3], ['Shai Gilgeous-Alexander', 4], ['Giannis Antetokounmpo', 5], ['Tyrese Maxey', 6]]",
@@ -17,12 +17,12 @@
   "[bbref] 2026",
   "  ok: 583 jugadores",
   "[bbref] 2027",
-  "  ok: 465 jugadores",
+  "  ok: 466 jugadores",
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 238 (nuevos 1)",
-  "  ok: temporada regular 464 · ej: ('RJ Barrett', {'team': 'TOR', 'gp': 12, 'gs': 12, 'min': 33.4, 'pts': 21.3, 'reb': 6.7, 'ast': 4.1, 'stl': 0.5, 'blk': 0.5, 'tpm': 1.6, 'to': 1.8, 'fgp': 0.464, 'ftp': 0.621})",
+  "  juegos guardados 241 (nuevos 3)",
+  "  ok: temporada regular 465 · ej: ('RJ Barrett', {'team': 'TOR', 'gp': 12, 'gs': 12, 'min': 33.4, 'pts': 21.3, 'reb': 6.7, 'ast': 4.1, 'stl': 0.5, 'blk': 0.5, 'tpm': 1.6, 'to': 1.8, 'fgp': 0.464, 'ftp': 0.621})",
   "[depth] ESPN",
   "  ok: 526 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
@@ -458,7 +458,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "1.1537394000"
+     "1.1604560000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -468,7 +468,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "3.1417221000"
+     "3.1548964000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -478,7 +478,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "3.9686790576"
+     "3.9711180873"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -488,7 +488,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "3.8207833357"
+     "3.8183445777"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -498,7 +498,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "1.1167570722"
+     "1.1188404831"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -508,7 +508,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "2.6817173440"
+     "2.6217100029"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -518,7 +518,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "2.0466927973"
+     "2.0412669289"
     ]
    ],
    "postbacks": [
@@ -954,7 +954,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "1.2429060000"
+     "1.2733082000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -964,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "1.1590145000"
+     "1.1690256000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -974,7 +974,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.1758234472"
+     "0.1519837153"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -984,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.1925562096"
+     "2.1969972081"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -994,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "2.8678102423"
+     "2.8878865508"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1004,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "0.2840535878"
+     "0.2826496491"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1014,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "0.6739687039"
+     "0.6981895159"
     ]
    ],
    "postbacks": [
@@ -1046,7 +1046,7 @@
     "BLK",
     "TO",
     "TOTAL",
-    500
+    501
    ]
   ],
   [
@@ -1109,7 +1109,7 @@
     "TO",
     "TOTAL"
    ],
-   "n": 464,
+   "n": 465,
    "sample": [
     {
      "R#": "1",
@@ -1127,7 +1127,7 @@
      "STL": "2.0",
      "BLK": "0.7",
      "TO": "5.0",
-     "TOTAL": "17.47"
+     "TOTAL": "17.43"
     },
     {
      "R#": "2",
@@ -1145,7 +1145,7 @@
      "STL": "1.2",
      "BLK": "4.4",
      "TO": "2.0",
-     "TOTAL": "17.37"
+     "TOTAL": "17.35"
     },
     {
      "R#": "3",
@@ -1163,7 +1163,7 @@
      "STL": "1.8",
      "BLK": "1.2",
      "TO": "3.0",
-     "TOTAL": "12.37"
+     "TOTAL": "12.32"
     }
    ]
   },
@@ -1206,7 +1206,7 @@
      "STL": "1.2",
      "BLK": "3.6",
      "TO": "2.9",
-     "TOTAL": "15.48"
+     "TOTAL": "15.50"
     },
     {
      "R#": "2",
@@ -1225,7 +1225,7 @@
      "STL": "1.7",
      "BLK": "0.5",
      "TO": "4.0",
-     "TOTAL": "15.13"
+     "TOTAL": "15.18"
     },
     {
      "R#": "3",
@@ -1244,7 +1244,7 @@
      "STL": "1.6",
      "BLK": "0.7",
      "TO": "3.3",
-     "TOTAL": "13.21"
+     "TOTAL": "13.25"
     }
    ]
   },
