@@ -21,10 +21,10 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 264 (nuevos 3)",
-  "  ok: temporada regular 471 · ej: ('Pascal Siakam', {'team': 'IND', 'gp': 13, 'gs': 13, 'min': 32.4, 'pts': 23.1, 'reb': 6.2, 'ast': 4.0, 'stl': 0.9, 'blk': 0.1, 'tpm': 1.6, 'to': 2.1, 'fgp': 0.514, 'ftp': 0.726})",
+  "  juegos guardados 272 (nuevos 8)",
+  "  ok: temporada regular 471 · ej: ('Franz Wagner', {'team': 'ORL', 'gp': 13, 'gs': 13, 'min': 36.8, 'pts': 24.2, 'reb': 6.8, 'ast': 8.3, 'stl': 1.2, 'blk': 0.2, 'tpm': 1.3, 'to': 4.2, 'fgp': 0.464, 'ftp': 0.848})",
   "[depth] ESPN",
-  "  ok: 528 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 527 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
@@ -458,7 +458,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFGP",
      "hidden",
-     "1.1111138000"
+     "1.1202278000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFftpzz",
@@ -468,7 +468,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "3.2089918000"
+     "3.2232005000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -478,7 +478,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "3.9969059084"
+     "4.0198301990"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -488,7 +488,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "3.9001773673"
+     "3.8852270483"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -498,7 +498,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "1.0063116299"
+     "1.0086387970"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -508,7 +508,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "2.6877701832"
+     "2.6949773336"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -518,7 +518,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "1.9189539874"
+     "1.9287807889"
     ]
    ],
    "postbacks": [
@@ -527,8 +527,6 @@
    ],
    "text": [
     "rest of season rankings are on our projections page",
-    "MORE INFORMATION",
-    "MORE DETAILS",
     "Show"
    ]
   },
@@ -966,7 +964,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFFTP",
      "hidden",
-     "1.1647721000"
+     "1.1647735000"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFtgmzz",
@@ -976,7 +974,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFTGM",
      "hidden",
-     "0.1709798917"
+     "0.1708691499"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFptszz",
@@ -986,7 +984,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFPTS",
      "hidden",
-     "2.1782717183"
+     "2.1779161531"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFrebzz",
@@ -996,7 +994,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFREB",
      "hidden",
-     "2.9233188827"
+     "2.9240235240"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFastzz",
@@ -1006,7 +1004,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFAST",
      "hidden",
-     "0.3346137129"
+     "0.3237501823"
     ],
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFstlzz",
@@ -1016,7 +1014,7 @@
     [
      "ctl00$ContentPlaceHolder1$GridView1$ctl02$HFSTL",
      "hidden",
-     "0.7003975944"
+     "0.6739767729"
     ]
    ],
    "postbacks": [
@@ -1129,7 +1127,7 @@
      "STL": "1.9",
      "BLK": "0.7",
      "TO": "4.8",
-     "TOTAL": "17.41"
+     "TOTAL": "17.45"
     },
     {
      "R#": "2",
@@ -1147,7 +1145,7 @@
      "STL": "1.1",
      "BLK": "4.3",
      "TO": "2.0",
-     "TOTAL": "16.62"
+     "TOTAL": "16.71"
     },
     {
      "R#": "3",
@@ -1165,7 +1163,7 @@
      "STL": "1.9",
      "BLK": "1.1",
      "TO": "3.1",
-     "TOTAL": "12.95"
+     "TOTAL": "12.98"
     }
    ]
   },
@@ -1208,7 +1206,7 @@
      "STL": "1.2",
      "BLK": "3.6",
      "TO": "2.9",
-     "TOTAL": "15.70"
+     "TOTAL": "15.67"
     },
     {
      "R#": "2",
@@ -1227,7 +1225,7 @@
      "STL": "1.7",
      "BLK": "0.5",
      "TO": "4.0",
-     "TOTAL": "15.19"
+     "TOTAL": "15.15"
     },
     {
      "R#": "3",
@@ -1246,7 +1244,7 @@
      "STL": "1.6",
      "BLK": "0.7",
      "TO": "3.3",
-     "TOTAL": "13.37"
+     "TOTAL": "13.34"
     }
    ]
   },
