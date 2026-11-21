@@ -21,8 +21,8 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 293 (nuevos 2)",
-  "  ok: temporada regular 473 · ej: ('Gui Santos', {'team': 'GS', 'gp': 13, 'gs': 7, 'min': 18.9, 'pts': 6.3, 'reb': 4.2, 'ast': 1.7, 'stl': 0.4, 'blk': 0.4, 'tpm': 0.5, 'to': 1.2, 'fgp': 0.382, 'ftp': 0.649})",
+  "  juegos guardados 297 (nuevos 4)",
+  "  ok: temporada regular 473 · ej: ('Moussa Diabate', {'team': 'CHA', 'gp': 13, 'gs': 13, 'min': 29.6, 'pts': 9.6, 'reb': 10.6, 'ast': 2.1, 'stl': 1.2, 'blk': 1.0, 'tpm': 0.0, 'to': 2.2, 'fgp': 0.634, 'ftp': 0.7})",
   "[depth] ESPN",
   "  ok: 527 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
@@ -527,8 +527,6 @@
    ],
    "text": [
     "rest of season rankings are on our projections page",
-    "MORE INFORMATION",
-    "MORE DETAILS",
     "Show"
    ]
   },
