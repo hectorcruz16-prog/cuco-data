@@ -21,10 +21,10 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 308 (nuevos 5)",
-  "  ok: temporada regular 474 · ej: ('Kyle Kuzma', {'team': 'MIL', 'gp': 15, 'gs': 15, 'min': 27.5, 'pts': 12.7, 'reb': 5.2, 'ast': 2.3, 'stl': 0.9, 'blk': 0.4, 'tpm': 1.7, 'to': 1.7, 'fgp': 0.454, 'ftp': 0.6})",
+  "  juegos guardados 313 (nuevos 5)",
+  "  ok: temporada regular 474 · ej: ('John Collins', {'team': 'DET', 'gp': 15, 'gs': 15, 'min': 25.7, 'pts': 11.4, 'reb': 5.8, 'ast': 0.7, 'stl': 0.5, 'blk': 0.9, 'tpm': 1.5, 'to': 1.1, 'fgp': 0.485, 'ftp': 0.846})",
   "[depth] ESPN",
-  "  ok: 527 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
+  "  ok: 528 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('CJ McCollum', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
  ],
  "forms": {
   "https://hashtagbasketball.com/fantasy-basketball-rankings": {
