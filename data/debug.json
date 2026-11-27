@@ -21,7 +21,7 @@
   "[adv] 2026",
   "  ok: 583 · ej: ('Amen Thompson', {'usg': 20.0, 'per': 18.9, 'ts': 0.594, 'bpm': 2.6, 'ws48': 0.167, 'mp': 2953.0})",
   "[l15] ESPN box scores",
-  "  juegos guardados 337 (nuevos 2)",
+  "  juegos guardados 337 (nuevos 0)",
   "  ok: temporada regular 482 · ej: ('Giannis Antetokounmpo', {'team': 'MIA', 'gp': 15, 'gs': 15, 'min': 32.6, 'pts': 28.0, 'reb': 13.1, 'ast': 5.7, 'stl': 0.9, 'blk': 1.3, 'tpm': 0.5, 'to': 3.3, 'fgp': 0.597, 'ftp': 0.657})",
   "[depth] ESPN",
   "  ok: 528 · titulares: 150 · ej: [('Kingston Flemings', {'team': 'ATL', 'pos': 'PG', 'rank': 1}), ('Aaron Wiggins', {'team': 'ATL', 'pos': 'PG', 'rank': 2}), ('Nickeil Alexander-Walker', {'team': 'ATL', 'pos': 'SG', 'rank': 1})]"
